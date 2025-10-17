@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 2 - Seminario de Investigación Universitaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header y Navegación -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                <a href="index.html">Seminario PSEI Economía</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Inicio</a>
+                <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 1</a>
+                <a href="dia2.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Día 2</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 hover:text-blue-500 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Inicio</a>
+            <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 1</a>
+            <a href="dia2.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-blue-50 text-blue-600">Día 2</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Página Día 2 -->
+        <div class="agenda-day">
+            <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">Segundo Día del Seminario</h1>
+            <p id="fecha-dia2" class="text-center text-gray-600 mb-12">Cargando...</p>
+            
+            <div id="ponencias-dia2" class="space-y-8 max-w-4xl mx-auto">
+                <!-- Las ponencias se cargarán dinámicamente aquí -->
+                <div class="text-center py-8">
+                    <p class="text-gray-500">Cargando ponencias...</p>
+                </div>
+            </div>
+
+            <!-- Navegación entre días -->
+            <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+                <a href="dia1.html" class="bg-gray-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-600 transition duration-300">
+                    ← Día 1
+                </a>
+                <a href="index.html" class="bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-20 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 COLPOS Campus Montesillo. PSEI-Economía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/ponencias-manager.js"></script>
+    <script>
+        // Configuración específica para la página del día 2
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configuración del menú móvil para esta página
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

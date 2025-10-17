@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminario de Investigación Universitaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header y Navegación -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                <a href="index.html">Seminario PSEI Economía</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Inicio</a>
+                <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 1</a>
+                <a href="dia2.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 hover:text-blue-500 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-blue-50 text-blue-600">Inicio</a>
+            <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 1</a>
+            <a href="dia2.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 2</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Página de Inicio -->
+        <section class="text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Bienvenido a la presentación de Avances de Investigación</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Un espacio para la difusión del conocimiento, el debate académico y la presentación de los proyectos  de investigación en Economía.</p>
+            <div class="flex justify-center space-x-4">
+                 <a href="dia1.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">Ver Agenda</a>
+            </div>
+        </section>
+        
+        <section class="mt-20 max-w-4xl mx-auto">
+            <div class="space-y-8">
+                <!-- Fila Misión -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-center space-x-6">
+                    <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-1 text-blue-600">Nuestra Misión</h3>
+                        <p class="text-gray-600">Fomentar un ambiente de colaboración y excelencia académica, permitiendo a los estudiantes presentar sus avances y recibir retroalimentación valiosa.</p>
+                    </div>
+                </div>
+                <!-- Fila Fechas -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-center space-x-6">
+                     <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-1 text-blue-600">Fechas Clave</h3>
+                        <p class="text-gray-600"><span class="font-semibold">Fechas:</span> 13 y 14 de Noviembre, 2025<br><span class="font-semibold">Lugar:</span> Pendiente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Eventos Pasados -->
+        <section class="mt-20">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Momentos de Eventos Anteriores (Aquí fotos del seminario anterior)</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Imagen 1 -->
+                    <div class="gallery-card">
+                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Ponencia" alt="Foto de una ponencia en un evento pasado">
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="gallery-card">
+                        <img src="https://placehold.co/600x400/10B981/FFFFFF?text=Networking" alt="Foto de asistentes interactuando">
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="gallery-card">
+                        <img src="https://placehold.co/600x400/F97316/FFFFFF?text=Audiencia" alt="Foto de la audiencia en el seminario">
+                    </div>
+                     <!-- Imagen 4 -->
+                    <div class="gallery-card">
+                        <img src="https://placehold.co/600x400/8B5CF6/FFFFFF?text=Taller" alt="Foto de un taller práctico">
+                    </div>
+                     <!-- Imagen 5 -->
+                    <div class="gallery-card">
+                        <img src="https://placehold.co/600x400/EF4444/FFFFFF?text=Debate" alt="Foto de un panel de debate">
+                    </div>
+                     <!-- Imagen 6 -->
+                    <div class="gallery-card">
+                        <img src="https://placehold.co/600x400/EAB308/FFFFFF?text=Clausura" alt="Foto de la ceremonia de clausura">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Registro -->
+        <section class="mt-20">
+             <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Regístrate Ahora</h2>
+                <p class="text-gray-600 mb-8">Asegura tu lugar en el evento a través de nuestro formulario de registro. ¡Es gratis!</p>
+                <!-- NOTA: Reemplaza el href="#" con el enlace real de tu Google Form -->
+                <a href="#" target="_blank" class="inline-block w-full sm:w-auto bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">
+                    Ir al Formulario de Registro
+                </a>
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-20 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 COLPOS Campus Montesillo. PSEI-Economía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
