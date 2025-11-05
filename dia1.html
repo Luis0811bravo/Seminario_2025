@@ -15,26 +15,41 @@
 
     <!-- Header y Navegación -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="src/img/Logo_COLPOS.png" alt="Logo COLPOS" class="h-8 md:h-10 w-auto">
-                <img src="src/img/Logo_economia.png" alt="Logo Economía" class="h-8 md:h-10 w-auto">
-                <div class="text-lg md:text-xl font-bold text-blue-600">
+        <nav class="container mx-auto px-6 py-4">
+            <!-- Primera fila: Logos y menú hamburguesa -->
+            <div class="flex justify-between items-center mb-2 md:mb-0">
+                <div class="flex items-center space-x-3">
+                    <img src="src/img/Logo_COLPOS.png" alt="Logo COLPOS" class="h-8 md:h-10 w-auto">
+                    <img src="src/img/Logo_economia.png" alt="Logo Economía" class="h-8 md:h-10 w-auto">
+                    <!-- Título en desktop junto a los logos -->
+                    <div class="hidden md:block text-lg md:text-xl font-bold text-blue-600">
+                        <a href="index.html" class="hover:text-blue-700 transition duration-300">
+                            <span class="block">Presentación de Avances de Investigación</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navegación desktop y botón móvil -->
+                <div class="flex items-center">
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Inicio</a>
+                        <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Proyectos</a>
+                        <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Día 1</a>
+                        <a href="dia2.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="text-gray-600 hover:text-blue-500 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda fila: Título en móvil -->
+            <div class="md:hidden text-center">
+                <div class="text-sm font-bold text-blue-600">
                     <a href="index.html" class="hover:text-blue-700 transition duration-300">
                         <span class="block">Presentación de Avances de Investigación</span>
                     </a>
                 </div>
-            </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Inicio</a>
-                <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Proyectos</a>
-                <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Día 1</a>
-                <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-gray-600 hover:text-blue-500 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
             </div>
         </nav>
         <!-- Menú Móvil -->
