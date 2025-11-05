@@ -16,13 +16,20 @@
     <!-- Header y Navegación -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-600">
-                <a href="index.html">Seminario PSEI Economía</a>
+            <div class="flex items-center space-x-3">
+                <img src="src/img/Logo_COLPOS.png" alt="Logo COLPOS" class="h-8 md:h-10 w-auto">
+                <img src="src/img/Logo_economia.png" alt="Logo Economía" class="h-8 md:h-10 w-auto">
+                <div class="text-lg md:text-xl font-bold text-blue-600">
+                    <a href="index.html" class="hover:text-blue-700 transition duration-300">
+                        <span class="block">Presentación de Avances de Investigación</span>
+                    </a>
+                </div>
             </div>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Inicio</a>
-                <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 1</a>
-                <a href="dia2.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
+                <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Proyectos</a>
+                <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 1</a>
+                <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
             </div>
             <div class="md:hidden">
                 <button id="menu-btn" class="text-gray-600 hover:text-blue-500 focus:outline-none">
@@ -33,6 +40,7 @@
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-blue-50 text-blue-600">Inicio</a>
+            <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Proyectos</a>
             <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 1</a>
             <a href="dia2.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 2</a>
         </div>
@@ -41,66 +49,378 @@
     <main class="container mx-auto px-6 py-12">
         <!-- Página de Inicio -->
         <section class="text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Bienvenido a la presentación de Avances de Investigación</h1>
+
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                <span class="block text-blue-600 text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                    Segundo Seminario de
+                </span>
+                <span class="block text-4xl md:text-5xl lg:text-6xl font-extrabold mb-2">
+                    Avances de Investigación
+                </span>
+                <span class="block text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">
+                    y Primer Encuentro
+                </span>
+                <span class="block text-2xl md:text-3xl lg:text-4xl text-blue-600 font-bold mt-2">
+                    Economía en Acción
+                </span>
+            </h1>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Un espacio para la difusión del conocimiento, el debate académico y la presentación de los proyectos  de investigación en Economía.</p>
             <div class="flex justify-center space-x-4">
-                 <a href="dia1.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">Ver Agenda</a>
+                 <a href="proyectos.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">Ver Agenda (proximamente)</a>
             </div>
         </section>
-        
-        <section class="mt-20 max-w-4xl mx-auto">
-            <div class="space-y-8">
-                <!-- Fila Misión -->
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-center space-x-6">
-                    <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-xl mb-1 text-blue-600">Nuestra Misión</h3>
-                        <p class="text-gray-600">Fomentar un ambiente de colaboración y excelencia académica, permitiendo a los estudiantes presentar sus avances y recibir retroalimentación valiosa.</p>
-                    </div>
+        <!-- Sección de Banners -->
+        <section class="mt-20 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Información del Evento</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <!-- Banner 1 -->
+                    <img src="src/img/banner1.jpg" alt="Banner Informativo 1" class="w-full h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="openModal('src/img/banner1.jpg')">
                 </div>
-                <!-- Fila Fechas -->
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-center space-x-6">
-                     <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-xl mb-1 text-blue-600">Fechas Clave</h3>
-                        <p class="text-gray-600"><span class="font-semibold">Fechas:</span> 13 y 14 de Noviembre, 2025<br><span class="font-semibold">Lugar:</span> Pendiente</p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <!-- Banner 2 -->
+                    <img src="src/img/banner2.jpg" alt="Banner Informativo 2" class="w-full h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="openModal('src/img/banner2.jpg')">
                 </div>
             </div>
         </section>
 
+        <!-- Modal para mostrar imágenes en tamaño completo -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden" onclick="closeModal()">
+            <div class="max-w-4xl max-h-full p-4">
+                <img id="modalImage" src="" alt="Imagen ampliada" class="max-w-full max-h-full object-contain">
+                <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-300 transition duration-300">&times;</button>
+            </div>
+        </div>
+
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById('imageModal').classList.remove('hidden');
+                document.getElementById('modalImage').src = imageSrc;
+                document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+            }
+
+            function closeModal() {
+                document.getElementById('imageModal').classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restaurar scroll del body
+            }
+
+            // Cerrar modal con tecla Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        </script>
+
+        <!-- *** NUEVA SECCIÓN: MODALIDADES *** -->
+        <section class="mt-20">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Modalidades del Seminario</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Modalidad 1: Presentación -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-t-4 border-blue-500">
+                        <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full inline-block mb-5">
+                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Presentación de Avances</h3>
+                        <p class="text-gray-600 text-sm">Espacio dedicado a la exposición oral de avances de los proyectos de investigación en curso, fomentando el debate y la retroalimentación.</p>
+                    </div>
+
+                    <!-- Modalidad 2: Cartel -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-t-4 border-blue-500">
+                        <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full inline-block mb-5">
+                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cartel de Resultados</h3>
+                        <p class="text-gray-600 text-sm">Exposición de pósteres donde los investigadores pueden presentar sus hallazgos y discutir sus resultados de forma interactiva.</p>
+                    </div>
+
+                    <!-- Modalidad 3: Talleres -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-t-4 border-blue-500">
+                        <div class="flex-shrink-0 bg-blue-100 p-4 rounded-full inline-block mb-5">
+                                <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Talleres Especializados</h3>
+                        <p class="text-gray-600 text-sm">Actividades prácticas y colaborativas diseñadas para la capacitación y exhibición de productos del agro mexicano.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrantes del nucleo academico -->
+        <section class="mt-20">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Núcleo Académico</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Conoce a los profesores investigadores que conforman el núcleo académico del programa PSEI-Economía
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- MIEMBROS DEL COMITÉ ACADÉMICO (Primero) -->
+                    
+                    <!-- Miembro 1 - Comité Académico -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-green-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[270px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <div class="mb-2">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                                    Integrante del Comité Académico
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. Oscar Antonio Arana Coronado</h3>
+                            <p class="text-green-600 font-semibold mb-2 min-h-[24px]">Profesor investigador Asociado</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Economía Agrícola, U. A. Chapingo.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrOscarAntonio.pdf" target="_blank" class="inline-block bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 2 - Comité Académico -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-green-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[270px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <div class="mb-2">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                                    Integrante del Comité Académico
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. Jaime Arturo Matus Gardea</h3>
+                            <p class="text-green-600 font-semibold mb-2 min-h-[24px]">Profesor investigador titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Economía, U. de Purdue.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrJaimeArturo.pdf" target="_blank" class="inline-block bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 3 - Comité Académico -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-green-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[270px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <div class="mb-2">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                                    Integrante del Comité Académico
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dra. María de J. Santiago Cruz</h3>
+                            <p class="text-green-600 font-semibold mb-2 min-h-[24px]">Profesora investigadora titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctora en Economía, U. de Marburg.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DraMariadeJesus.pdf" target="_blank" class="inline-block bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DEMÁS INTEGRANTES (En orden alfabético) -->
+
+                    <!-- Miembro 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dra. Ángela Fontes Carrillo</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesora investigadora</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctora en Desarrollo sustentable, U. Politécnica de Madrid.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DraAngelaFontes.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. Daniel Barrera Islas</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Email: dbarrera@colpos.mx</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="#" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. J. Jaime Arana Coronado</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor investigador titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Economía de Negocios, U. de Wageningen.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrJJaime.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 7 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. José Alberto García Salazar</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor investigador titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Ciencias, C. de Postgraduados.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrJoseAlberto.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 8 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. José de Jesús Brambila Paz</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor investigador titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Economía, UNAM.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrJosedeJesus.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 9 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. José Miguel Omaña Silvestre</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor investigador adjunto</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctor en Ciencias Agrícola, C. de Postgraduados.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrJoseMiguel.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 10 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. José Saturnino Mora Flores</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor Investigador Titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Ciencias, C. de Postgraduados.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrJoseSaturnino.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 11 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dra. Laura Elena Garza Bueno</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesora investigadora titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Ph. D. de la U. Estatal de Moscú.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DraLauraElena.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 12 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dra. María del Carmen López Reyna</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor Investigador Titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Ciencias, C. de Postgraduados.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="#" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 13 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. Miguel Ángel Martínez Damián</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor investigador titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctorado en Economía Agrícola.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrMiguelAngel.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 14 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. Roberto Carlos García Sánchez</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor Investigador Asociado</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctor, U. Politécnica de Madrid.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrRobertoCarlos.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 15 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-t-4 border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between h-full min-h-[240px]">
+                        <div class="flex-grow flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2 min-h-[56px] flex items-center justify-center">Dr. Roberto García Mata</h3>
+                            <p class="text-blue-600 font-semibold mb-2 min-h-[24px]">Profesor Investigador Titular</p>
+                            <p class="text-gray-600 text-sm mb-4 min-h-[40px] flex items-center justify-center">Doctor en Ciencias en Economía Agrícola.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.colpos.mx/cp_pdf/posgrado/psei/economia/cvu/CV_DrRobertoGarcia.pdf" target="_blank" class="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
         <!-- Galería de Eventos Pasados -->
         <section class="mt-20">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Momentos de Eventos Anteriores (Aquí fotos del seminario anterior)</h2>
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Presentaciones Seminario 2024</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Imagen 1 -->
                     <div class="gallery-card">
-                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Ponencia" alt="Foto de una ponencia en un evento pasado">
+                        <img src="src/seminario-previo/IMG-20251020-WA0017.jpg" alt="Foto del seminario anterior - Presentación">
                     </div>
                     <!-- Imagen 2 -->
                     <div class="gallery-card">
-                        <img src="https://placehold.co/600x400/10B981/FFFFFF?text=Networking" alt="Foto de asistentes interactuando">
+                        <img src="src/seminario-previo/IMG-20251020-WA0018.jpg" alt="Foto del seminario anterior - Participantes">
                     </div>
                     <!-- Imagen 3 -->
                     <div class="gallery-card">
-                        <img src="https://placehold.co/600x400/F97316/FFFFFF?text=Audiencia" alt="Foto de la audiencia en el seminario">
+                        <img src="src/seminario-previo/IMG-20251020-WA0019.jpg" alt="Foto del seminario anterior - Audiencia">
                     </div>
                      <!-- Imagen 4 -->
                     <div class="gallery-card">
-                        <img src="https://placehold.co/600x400/8B5CF6/FFFFFF?text=Taller" alt="Foto de un taller práctico">
+                        <img src="src/seminario-previo/IMG-20251020-WA0023.jpg" alt="Foto del seminario anterior - Ponencia">
                     </div>
                      <!-- Imagen 5 -->
                     <div class="gallery-card">
-                        <img src="https://placehold.co/600x400/EF4444/FFFFFF?text=Debate" alt="Foto de un panel de debate">
+                        <img src="src/seminario-previo/IMG-20251020-WA0026.jpg" alt="Foto del seminario anterior - Debate">
                     </div>
                      <!-- Imagen 6 -->
                     <div class="gallery-card">
-                        <img src="https://placehold.co/600x400/EAB308/FFFFFF?text=Clausura" alt="Foto de la ceremonia de clausura">
+                        <img src="src/seminario-previo/IMG-20251020-WA0027.jpg" alt="Foto del seminario anterior - Actividad">
                     </div>
                 </div>
             </div>
@@ -108,13 +428,40 @@
 
         <!-- Sección de Registro -->
         <section class="mt-20">
-             <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Regístrate Ahora</h2>
-                <p class="text-gray-600 mb-8">Asegura tu lugar en el evento a través de nuestro formulario de registro. ¡Es gratis!</p>
-                <!-- NOTA: Reemplaza el href="#" con el enlace real de tu Google Form -->
-                <a href="#" target="_blank" class="inline-block w-full sm:w-auto bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">
-                    Ir al Formulario de Registro
-                </a>
+             <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Regístrate para Participar</h2>
+                    <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
+                        ¡Acompáñanos a ser parte del <strong>Segundo Seminario de Avances de Investigación</strong> 
+                        y <strong>Primer Encuentro Economía en Acción</strong>! Tu participación enriquecerá el debate académico y 
+                        contribuirá al intercambio de conocimientos en el campo de la economía.
+                    </p>
+                   
+                </div>
+                
+                <div class="text-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGgAeyyx78DieAltouhxtsfrvRSycEEM11FJb4HjO37YLPHg/viewform?usp=dialog" target="_blank" class="inline-block w-full sm:w-auto bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">
+                        <span class="text-lg">📝 Completar Registro</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">
+                        El registro es gratuito y solo toma unos minutos
+                    </p>
+                </div>
+                
+                <!-- Mensaje de Agradecimiento -->
+                <div class="mt-8 bg-green-50 border border-green-200 p-6 rounded-lg">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">¡Gracias por tu Interés!</h3>
+                        <p class="text-green-700 mb-4">
+                            Agradecemos tu participación en este evento académico. 
+                        </p>
+                        <div class="flex justify-center items-center space-x-2 text-green-600">
+                            <span class="text-2xl">🎓</span>
+                            <p class="font-medium">Esperamos verte en el seminario</p>
+                            <span class="text-2xl">🎓</span>
+                        </div>
+                    </div>
+                </div>
              </div>
         </section>
     </main>
