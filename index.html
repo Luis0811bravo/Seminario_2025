@@ -206,7 +206,7 @@
                     <!-- Miembro 3 - Comité Académico -->
                     <div class="bg-white p-4 rounded-lg shadow-lg text-center border-t-4 border-green-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
-                        <h3 class="text-lg font-bold text-gray-900 mb-2">Dra. María del Carmen López Reyna</h3>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Dra. Ma. del Carmen López Reyna</h3>
                         <p class="text-green-600 font-medium text-sm">Profesor Investigador</p>
                     </div>
 
@@ -298,6 +298,34 @@
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <!-- JavaScript para menú móvil -->
+    <script>
+        // Configuración del menú móvil
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Cerrar menú cuando se hace clic en un enlace
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+
+                // Cerrar menú cuando se hace clic fuera de él
+                document.addEventListener('click', function(event) {
+                    if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
