@@ -140,7 +140,7 @@
         "horario": "11:45 - 11:55",
         "tipo": "ponencia",
         "categoria": "doctorado",
-        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "avatar": "src/alumnos/Nochebuena.jpg",
         "badgeColor": "blue",
         "grado": "MC."
       },
@@ -162,7 +162,7 @@
         "horario": "12:05 - 12:15",
         "tipo": "ponencia",
         "categoria": "doctorado",
-        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "avatar": "src/alumnos/Belen.jpg",
         "badgeColor": "blue",
         "grado": "MC."
       },
@@ -318,13 +318,13 @@
         "grado": "Ing."
       },
       {
-        "id": "taller-2-4",
+        "id": "ponencia-2-4",
         "titulo": "Traspaso de la tasa de cambio",
-        "talleristas": "Dr. Miguel Ángel Martínez Damián / Dr. Jaime Arturo Matus Gardea",
+        "ponente": "Dr. Miguel Ángel Martínez Damián / Dr. Jaime Arturo Matus Gardea",
         "horario": "11:50 - 12:05",
-        "tipo": "taller",
+        "tipo": "ponencia",
         "categoria": "academico",
-        "avatar": "src/talleres/taller.jpg",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
         "badgeColor": "purple",
         "grado": "Dr."
       },
