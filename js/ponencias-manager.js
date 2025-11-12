@@ -219,46 +219,55 @@ class PonenciasManager {
         }
         
         return `
-            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 ${borderColor}">
-                <!-- Layout Mobile -->
-                <div class="block sm:hidden">
-                    <!-- Imagen centrada -->
-                    <div class="text-center mb-4">
-                        <img class="h-28 w-28 rounded-full object-cover shadow-md mx-auto" src="${avatar}" alt="${ponencia.ponente}">
-                    </div>
-                    <!-- Título -->
-                    <h3 class="text-lg font-bold text-gray-800 mb-3 text-center">${ponencia.titulo}</h3>
-                    <!-- Ponente -->
-                    <p class="text-gray-500 text-sm mb-3 text-center">Ponente: <span class="font-semibold text-gray-700">${ponencia.ponente}</span></p>
-                    <!-- Horario destacado -->
-                    <div class="text-center ${bgColorLight} px-4 py-3 rounded-lg mb-4">
-                        <span class="text-xl font-bold ${textColor}">${ponencia.horario.split(' - ')[0]}</span>
-                        <span class="text-gray-500 mx-2">-</span>
-                        <span class="text-xl font-bold ${textColor}">${ponencia.horario.split(' - ')[1]}</span>
-                    </div>
-                    <!-- Badge -->
-                    <div class="text-center">
-                        <span class="text-sm font-medium ${textColor} ${bgColorDark} py-2 px-4 rounded-full">${badgeText}</span>
+            <div class="bg-white rounded-lg shadow-lg border-l-4 ${borderColor} w-full max-w-full overflow-hidden">
+                <!-- Layout Mobile - Completamente vertical -->
+                <div class="sm:hidden">
+                    <div style="display: flex; flex-direction: column; width: 100%; padding: 16px;">
+                        <!-- Imagen arriba -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <img style="height: 64px; width: 64px; border-radius: 50%; object-fit: cover; margin: 0 auto; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" src="${avatar}" alt="${ponencia.ponente}">
+                        </div>
+                        
+                        <!-- Título -->
+                        <div style="text-align: center; margin-bottom: 8px;">
+                            <h3 style="font-size: 14px; font-weight: bold; color: #1f2937; line-height: 1.2; margin: 0; padding: 0 8px;">${ponencia.titulo}</h3>
+                        </div>
+                        
+                        <!-- Ponente -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <p style="font-size: 12px; color: #6b7280; margin: 0;">Ponente: <span style="font-weight: 600; color: #374151;">${ponencia.ponente}</span></p>
+                        </div>
+                        
+                        <!-- Horario -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <div style="background-color: #eff6ff; padding: 8px 12px; border-radius: 6px; display: inline-block;">
+                                <span style="font-size: 14px; font-weight: bold; color: #2563eb;">${ponencia.horario.split(' - ')[0]} - ${ponencia.horario.split(' - ')[1]}</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Badge -->
+                        <div style="text-align: center;">
+                            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 9999px; display: inline-block;">${badgeText}</span>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Layout Desktop -->
-                <div class="hidden sm:flex items-start space-x-6">
+                <div class="hidden sm:flex items-start space-x-6 p-6">
                     <!-- Horario izquierdo -->
-                    <div class="text-center w-24 flex-shrink-0">
-                        <span class="text-2xl font-bold ${textColor}">${ponencia.horario.split(' - ')[0]}</span>
-                        <br>
-                        <span class="text-gray-500">${ponencia.horario.split(' - ')[1]}</span>
+                    <div class="text-center w-20 lg:w-24 flex-shrink-0">
+                        <span class="text-xl lg:text-2xl font-bold ${textColor} block">${ponencia.horario.split(' - ')[0]}</span>
+                        <span class="text-sm text-gray-500 block">${ponencia.horario.split(' - ')[1]}</span>
                     </div>
                     <!-- Contenido -->
-                    <div class="flex-1">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">${ponencia.titulo}</h3>
-                        <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">${ponencia.ponente}</span></p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">${ponencia.titulo}</h3>
+                        <p class="text-gray-500 text-sm mb-3 truncate">Ponente: <span class="font-semibold text-gray-700">${ponencia.ponente}</span></p>
                         <span class="text-sm font-medium ${textColor} ${bgColorDark} py-1 px-3 rounded-full">${badgeText}</span>
                     </div>
                     <!-- Imagen -->
                     <div class="flex-shrink-0">
-                        <img class="h-28 w-28 rounded-full object-cover shadow-md" src="${avatar}" alt="${ponencia.ponente}">
+                        <img class="h-24 w-24 lg:h-28 lg:w-28 rounded-full object-cover shadow-md" src="${avatar}" alt="${ponencia.ponente}">
                     </div>
                 </div>
             </div>
@@ -273,46 +282,55 @@ class PonenciasManager {
         const avatar = ponencia.avatar || 'src/talleres/taller.jpg';
         
         return `
-            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                <!-- Layout Mobile -->
-                <div class="block sm:hidden">
-                    <!-- Imagen centrada -->
-                    <div class="text-center mb-4">
-                        <img class="h-28 w-28 rounded-full object-${ponencia.avatar && ponencia.avatar.includes('Citlalmina') ? 'contain' : 'cover'} shadow-md mx-auto" src="${avatar}" alt="Taller Especializado">
-                    </div>
-                    <!-- Título -->
-                    <h3 class="text-xl font-bold text-gray-800 mb-3 text-center">${ponencia.titulo}</h3>
-                    <!-- Tallerista -->
-                    <p class="text-gray-500 text-sm mb-3 text-center">Tallerista${ponencia.talleristas ? 's' : ''}: <span class="font-semibold text-gray-700">${presenter}</span></p>
-                    <!-- Horario destacado -->
-                    <div class="text-center bg-green-50 px-4 py-3 rounded-lg mb-4">
-                        <span class="text-xl font-bold text-green-600">${ponencia.horario.split(' - ')[0]}</span>
-                        <span class="text-gray-500 mx-2">-</span>
-                        <span class="text-xl font-bold text-green-600">${ponencia.horario.split(' - ')[1]}</span>
-                    </div>
-                    <!-- Badge -->
-                    <div class="text-center">
-                        <span class="text-sm font-medium text-green-600 bg-green-100 py-2 px-4 rounded-full">Taller</span>
+            <div class="bg-white rounded-lg shadow-lg border-l-4 border-green-500 w-full max-w-full overflow-hidden">
+                <!-- Layout Mobile - Completamente vertical -->
+                <div class="sm:hidden">
+                    <div style="display: flex; flex-direction: column; width: 100%; padding: 16px;">
+                        <!-- Imagen arriba -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <img style="height: 64px; width: 64px; border-radius: 50%; object-fit: ${ponencia.avatar && ponencia.avatar.includes('Citlalmina') ? 'contain' : 'cover'}; margin: 0 auto; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" src="${avatar}" alt="Taller Especializado">
+                        </div>
+                        
+                        <!-- Título -->
+                        <div style="text-align: center; margin-bottom: 8px;">
+                            <h3 style="font-size: 14px; font-weight: bold; color: #1f2937; line-height: 1.2; margin: 0; padding: 0 8px;">${ponencia.titulo}</h3>
+                        </div>
+                        
+                        <!-- Tallerista -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <p style="font-size: 12px; color: #6b7280; margin: 0;">Tallerista${ponencia.talleristas ? 's' : ''}: <span style="font-weight: 600; color: #374151;">${presenter}</span></p>
+                        </div>
+                        
+                        <!-- Horario -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <div style="background-color: #f0fdf4; padding: 8px 12px; border-radius: 6px; display: inline-block;">
+                                <span style="font-size: 14px; font-weight: bold; color: #16a34a;">${ponencia.horario.split(' - ')[0]} - ${ponencia.horario.split(' - ')[1]}</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Badge -->
+                        <div style="text-align: center;">
+                            <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 9999px; display: inline-block;">Taller</span>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Layout Desktop -->
-                <div class="hidden sm:flex items-start space-x-6">
+                <div class="hidden sm:flex items-start space-x-6 p-6">
                     <!-- Horario izquierdo -->
-                    <div class="text-center w-24 flex-shrink-0">
-                        <span class="text-2xl font-bold text-green-600">${ponencia.horario.split(' - ')[0]}</span>
-                        <br>
-                        <span class="text-gray-500">${ponencia.horario.split(' - ')[1]}</span>
+                    <div class="text-center w-20 lg:w-24 flex-shrink-0">
+                        <span class="text-xl lg:text-2xl font-bold text-green-600 block">${ponencia.horario.split(' - ')[0]}</span>
+                        <span class="text-sm text-gray-500 block">${ponencia.horario.split(' - ')[1]}</span>
                     </div>
                     <!-- Contenido -->
-                    <div class="flex-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">${ponencia.titulo}</h3>
-                        <p class="text-gray-500 text-sm mb-3">Tallerista${ponencia.talleristas ? 's' : ''}: <span class="font-semibold text-gray-700">${presenter}</span></p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">${ponencia.titulo}</h3>
+                        <p class="text-gray-500 text-sm mb-3 truncate">Tallerista${ponencia.talleristas ? 's' : ''}: <span class="font-semibold text-gray-700">${presenter}</span></p>
                         <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
                     </div>
                     <!-- Imagen -->
                     <div class="flex-shrink-0">
-                        <img class="h-28 w-28 rounded-full object-${ponencia.avatar && ponencia.avatar.includes('Citlalmina') ? 'contain' : 'cover'} shadow-md" src="${avatar}" alt="Taller Especializado">
+                        <img class="h-24 w-24 lg:h-28 lg:w-28 rounded-full object-${ponencia.avatar && ponencia.avatar.includes('Citlalmina') ? 'contain' : 'cover'} shadow-md" src="${avatar}" alt="Taller Especializado">
                     </div>
                 </div>
             </div>
@@ -327,47 +345,56 @@ class PonenciasManager {
         const badgeText = ponencia.categoria === 'doctorado' ? 'Doctorado' : 'Maestría';
         
         return `
-            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
-                <!-- Layout Mobile -->
-                <div class="block sm:hidden">
-                    <!-- Imagen centrada -->
-                    <div class="text-center mb-4">
-                        <img class="h-28 w-28 rounded-full object-cover shadow-md mx-auto" src="${avatar}" alt="Cartel de Resultados">
-                    </div>
-                    <!-- Título -->
-                    <h3 class="text-lg font-bold text-gray-800 mb-3 text-center">${ponencia.titulo}</h3>
-                    <!-- Ponente -->
-                    <p class="text-gray-500 text-sm mb-3 text-center">Ponente: <span class="font-semibold text-gray-700">${ponencia.ponente}</span></p>
-                    <!-- Horario destacado -->
-                    <div class="text-center bg-purple-50 px-4 py-3 rounded-lg mb-4">
-                        <span class="text-xl font-bold text-purple-600">${ponencia.horario.split(' - ')[0]}</span>
-                        <span class="text-gray-500 mx-2">-</span>
-                        <span class="text-xl font-bold text-purple-600">${ponencia.horario.split(' - ')[1]}</span>
-                    </div>
-                    <!-- Badge -->
-                    <div class="text-center">
-                        <span class="text-sm font-medium text-purple-600 bg-purple-100 py-2 px-4 rounded-full">Cartel</span>
+            <div class="bg-white rounded-lg shadow-lg border-l-4 border-purple-500 w-full max-w-full overflow-hidden">
+                <!-- Layout Mobile - Completamente vertical -->
+                <div class="sm:hidden">
+                    <div style="display: flex; flex-direction: column; width: 100%; padding: 16px;">
+                        <!-- Imagen arriba -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <img style="height: 64px; width: 64px; border-radius: 50%; object-fit: cover; margin: 0 auto; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" src="${avatar}" alt="Cartel de Resultados">
+                        </div>
+                        
+                        <!-- Título -->
+                        <div style="text-align: center; margin-bottom: 8px;">
+                            <h3 style="font-size: 14px; font-weight: bold; color: #1f2937; line-height: 1.2; margin: 0; padding: 0 8px;">${ponencia.titulo}</h3>
+                        </div>
+                        
+                        <!-- Ponente -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <p style="font-size: 12px; color: #6b7280; margin: 0;">Ponente: <span style="font-weight: 600; color: #374151;">${ponencia.ponente}</span></p>
+                        </div>
+                        
+                        <!-- Horario -->
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <div style="background-color: #faf5ff; padding: 8px 12px; border-radius: 6px; display: inline-block;">
+                                <span style="font-size: 14px; font-weight: bold; color: #9333ea;">${ponencia.horario.split(' - ')[0]} - ${ponencia.horario.split(' - ')[1]}</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Badge -->
+                        <div style="text-align: center;">
+                            <span style="background-color: #e9d5ff; color: #7c3aed; font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 9999px; display: inline-block;">Cartel</span>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Layout Desktop -->
-                <div class="hidden sm:flex items-start space-x-6">
+                <div class="hidden sm:flex items-start space-x-6 p-6">
                     <!-- Imagen -->
                     <div class="flex-shrink-0">
-                        <img class="h-28 w-28 rounded-full object-cover shadow-md" src="${avatar}" alt="Cartel de Resultados">
+                        <img class="h-24 w-24 lg:h-28 lg:w-28 rounded-full object-cover shadow-md" src="${avatar}" alt="Cartel de Resultados">
                     </div>
                     <!-- Contenido -->
-                    <div class="flex-1">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">${ponencia.titulo}</h3>
-                        <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">${ponencia.ponente}</span></p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">${ponencia.titulo}</h3>
+                        <p class="text-gray-500 text-sm mb-3 truncate">Ponente: <span class="font-semibold text-gray-700">${ponencia.ponente}</span></p>
                         <span class="text-sm font-medium text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Cartel</span>
                     </div>
                     <!-- Horario derecho -->
-                    <div class="text-center w-32 flex-shrink-0">
-                        <div class="bg-purple-50 px-3 py-2 rounded-lg">
-                            <span class="text-lg font-bold text-purple-600">${ponencia.horario.split(' - ')[0]}</span>
-                            <br>
-                            <span class="text-lg font-bold text-purple-600">${ponencia.horario.split(' - ')[1]}</span>
+                    <div class="text-center w-24 lg:w-32 flex-shrink-0">
+                        <div class="bg-purple-50 px-2 py-2 rounded-lg">
+                            <span class="text-base lg:text-lg font-bold text-purple-600 block">${ponencia.horario.split(' - ')[0]}</span>
+                            <span class="text-base lg:text-lg font-bold text-purple-600 block">${ponencia.horario.split(' - ')[1]}</span>
                         </div>
                     </div>
                 </div>

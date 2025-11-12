@@ -3,6 +3,59 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilos para mobile layout vertical */
+@media (max-width: 639px) {
+    .mobile-vertical-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 16px !important;
+    }
+    
+    .mobile-image-center {
+        text-align: center !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .mobile-image-center img {
+        height: 64px !important;
+        width: 64px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        margin: 0 auto !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    }
+    
+    .mobile-text-center {
+        text-align: center !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .mobile-text-center h3 {
+        font-size: 14px !important;
+        font-weight: bold !important;
+        color: #1f2937 !important;
+        line-height: 1.2 !important;
+        margin: 0 !important;
+        padding: 0 8px !important;
+    }
+    
+    .mobile-horario-box {
+        text-align: center !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .mobile-horario-box div {
+        padding: 8px 12px !important;
+        border-radius: 6px !important;
+        display: inline-block !important;
+    }
+    
+    .mobile-badge-center {
+        text-align: center !important;
+    }
+}
+
 /* Estilos para la navegación */
 .nav-link.active {
     color: #3b82f6; /* blue-500 */
