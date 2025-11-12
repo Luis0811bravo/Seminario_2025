@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Día 1 - Seminario de Investigación Universitaria</title>
+    <title>Día 1 - Seminario de Investigación</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header y Navegación -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4">
             <!-- Primera fila: Logos y menú hamburguesa -->
             <div class="flex justify-between items-center mb-2 md:mb-0">
@@ -32,8 +32,8 @@
                 <div class="flex items-center">
                     <div class="hidden md:flex items-center space-x-8">
                         <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Inicio</a>
-                        <a href="proyectos.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Proyectos</a>
-                        <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Día 1</a>
+                        <span class="nav-link text-gray-400 font-medium pb-1 cursor-not-allowed opacity-50">Proyectos</span>
+                        <a href="dia1.html" class="nav-link text-blue-600 border-b-2 border-blue-600 font-medium transition duration-300 pb-1 active">Día 1</a>
                         <a href="dia2.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
                     </div>
                     <div class="md:hidden">
@@ -51,39 +51,496 @@
                     </a>
                 </div>
             </div>
+            <!-- Información adicional del día -->
+            <div class="mt-3 text-center">
+                <div class="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2 inline-block">
+                    <span class="text-blue-700 font-semibold text-sm md:text-base">
+                        📅 Día 1 - 13 de Noviembre, 2025 | 📍 Salón Azul 
+                    </span>
+                </div>
+            </div>
         </nav>
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Inicio</a>
-            <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Proyectos</a>
-            <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-blue-50 text-blue-600">Día 1</a>
+            <span class="block py-2 px-4 text-sm text-gray-400 cursor-not-allowed opacity-50">Proyectos</span>
+            <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-blue-50 text-blue-600 font-semibold">Día 1</a>
             <a href="dia2.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 2</a>
+        </div>
+    </header>
         </div>
     </header>
 
     <main class="container mx-auto px-6 py-12">
         <!-- Página Día 1 -->
-        <div class="agenda-day">
-            <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">Primer Día del Seminario</h1>
-            <p id="fecha-dia1" class="text-center text-gray-600 mb-12">Cargando...</p>
-            
-            <div id="ponencias-dia1" class="space-y-8 max-w-4xl mx-auto">
-                <!-- Las ponencias se cargarán dinámicamente aquí -->
-                <div class="text-center py-8">
-                    <p class="text-gray-500">Cargando ponencias...</p>
+        <section id="dia1" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">AGENDA</h2>
+                <div class="space-y-8">
+                    
+                    <!-- Evento: Inauguración -->
+                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-gray-400">
+                        <div class="text-center w-24 flex-shrink-0">
+                            <span class="text-2xl font-bold text-gray-800">9:00</span>
+                            <br>
+                            <span class="text-gray-500">9:30</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Presentación de Invitados e inauguración del Seminario</h3>
+                            <span class="text-sm font-medium text-gray-500 bg-gray-100 py-1 px-3 rounded-full">Apertura de Seminario</span>
+                        </div>
+                    </div>
+
+                    <!-- Evento: Consejeros -->
+                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-gray-400">
+                        <div class="text-center w-24 flex-shrink-0">
+                            <span class="text-2xl font-bold text-gray-800">9:30</span>
+                            <span class="text-gray-500">10:00</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Participación de profesores consejeros</h3>
+                            <span class="text-sm font-medium text-gray-500 bg-gray-100 py-1 px-3 rounded-full">Evento General</span>
+                        </div>
+                    </div>
+
+                    <!-- Bloque Presentaciones -->
+                    <div class="text-center py-4 bg-blue-100 text-blue-800 font-bold rounded-lg">
+                        PRIMER BLOQUE: PRESENTACIONES
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Luis-Adrian.jpg" alt="MC. Luis Adrián Bravo Anaya">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Análisis espacial para la estimación de la adopción de innovaciones y tecnologías en la agricultura</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">10:00</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">10:10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Luis Adrián Bravo Anaya</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Ilse.jpg" alt="MC. Ilse Irene Gallegos Toledo">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">La valorización y aprovechamiento de los residuos sólidos</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">10:10</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">10:20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Ilse Irene Gallegos Toledo</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Ana.jpg" alt="MC. Ana Mercedes González Espinosa">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Integración de la cadena de valor de mezcal artesanal. El caso de los productores del municipio de Huitzuco de los Figueroa, Guerrero.</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">10:20</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">10:30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Ana Mercedes González Espinosa</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Diego.jpg" alt="MC. Diego Óscar Banda Moreno">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Evaluación e innovación de la fórmula y modelo empresarial: casos de estudios</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">10:30</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">10:40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Diego Óscar Banda Moreno</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Alfredo.jpg" alt="MC. Alfredo Arias Castañeda">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Modelo de recontrucción social para alcanzar la soberanía en Agua Blanca, Hidalgo</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">10:40</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">10:50</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Alfredo Arias Castañeda</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Evento: Receso -->
+                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
+                        <div class="text-center w-24 flex-shrink-0">
+                            <span class="text-2xl font-bold text-yellow-600">10:50</span>
+                            <span class="text-gray-500">11:00</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">RECESO</h3>
+                            <span class="text-sm font-medium text-yellow-600 bg-yellow-100 py-1 px-3 rounded-full">Receso</span>
+                        </div>
+                    </div>
+                                        
+                    <!-- Bloque Presentaciones -->
+                    <div class="text-center py-4 bg-blue-100 text-blue-800 font-bold rounded-lg">
+                        SEGUNDO BLOQUE: PRESENTACIONES
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Por definir</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">11:00</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">11:15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Dra. Laura Elena Garza Bueno</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Demanda discreta del tejocote</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">11:15</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">11:25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Lic. Gabriela Herrera Solís</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Maestría</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Evaluación socioeconómica de la cooperativa "Nangile Yanaxó" de Santa Cruz Acatepec, Oaxaca</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">11:25</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">11:35</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Lic. Daniela López Carmona</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Maestría</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">El mercado de la manzana fresca en México: 2000-2021</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">11:35</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">11:45</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Abdiel Menchaca Aguilar</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Nochebuena.jpg" alt="MC. Álvaro Nochebuena Molina">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Mercado de la carne de cerdo en México: sus determinantes, impacto del COVID-19 e imposición de un arancel</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">11:45</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">11:55</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Álvaro Nochebuena Molina</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Modelo de desarrollo regenerativo para la región Vaso de Texcoco basado en la cosmovisión regional</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">11:55</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">12:05</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Lic. Alma Dennis Sánchez Rebollar</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Maestría</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Belen.jpg" alt="MC. Álvaro Nochebuena Molina">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Modelo de desarrollo comunitario regenerativo: prácticas de intercambio del trueque en el ejido nuevo Veracruz, chiapas</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">12:05</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">12:15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Belén López Pérez</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Valoración económica integral para el diseño de un modelo de turismo regenerativo en Puerto Escondido, Oaxaca</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">12:15</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">12:25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Lic. Montserrat Martínez Perfecto</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Maestría</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Crecimiento económico y degradación ambiental en México: Evidencia empirica 1993-2023</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">12:25</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">12:35</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. María Isabel Madrid Pérez</span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Ponencia -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Medición de la inclusión en México</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-blue-600">12:35</span>
+                                        <span class="text-xs text-blue-500"> - </span>
+                                        <span class="text-sm font-bold text-blue-600">12:45</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Armando Ramírez Román </span></p>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
+                        </div>
+                    </div>
+
+                    <!-- Evento: Receso -->
+                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
+                        <div class="text-center w-24 flex-shrink-0">
+                            <span class="text-2xl font-bold text-yellow-600">12:45</span>
+                            <span class="text-gray-500">13:00</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">RECESO</h3>
+                            <span class="text-sm font-medium text-yellow-600 bg-yellow-100 py-1 px-3 rounded-full">Receso</span>
+                        </div>
+                    </div>
+
+                    <!-- Bloque Carteles -->
+                    <div class="text-center py-4 bg-blue-100 text-blue-800 font-bold rounded-lg">
+                        TERCER BLOQUE: CARTELES Y TALLERES
+                    </div>
+
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/cartel.jpg" alt="Cartel de Resultados">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Costos de producción de una unidad de aceituna (<em>Olea europea L.</em>) en la localidad El Olivo Ixmiquilpan, Hidalgo</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-purple-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-purple-600">13:00</span>
+                                        <span class="text-xs text-purple-500"> - </span>
+                                        <span class="text-sm font-bold text-purple-600">13:10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Cecilia Salmerón Vázquez</span></p>
+                            <span class="text-sm font-medium text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Cartel</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/cartel.jpg" alt="Cartel de Resultados">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Determinantes del consumo de leche bovina y sutitutos de leche en el municipio de Texcoco, Estado de México</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-purple-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-purple-600">13:10</span>
+                                        <span class="text-xs text-purple-500"> - </span>
+                                        <span class="text-sm font-bold text-purple-600">13:20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Lic. Fabiola Ramírez Cordero</span></p>
+                            <span class="text-sm font-medium text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Cartel</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/cartel.jpg" alt="Cartel de Resultados">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Eventos de distorsión en la fuerza laboral hispana en EE UU y su transmisión en las remesas a México</h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-purple-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-purple-600">13:20</span>
+                                        <span class="text-xs text-purple-500"> - </span>
+                                        <span class="text-sm font-bold text-purple-600">13:30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Rohel Ríos Cruz</span></p>
+                            <span class="text-sm font-medium text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Cartel</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+                        <div class="flex-shrink-0">
+                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Valeria.jpg" alt="Ing. Sanchéz Corona Valeria Samantha">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-gray-800">Extracción e identificación de metabolitos producidos por Chaetomium globosum como alternativa para el biocontrol de <em>Neopestaliopsis spp</em></h3>
+                                <div class="text-right ml-4 flex-shrink-0">
+                                    <div class="bg-purple-50 px-3 py-1 rounded-lg">
+                                        <span class="text-sm font-bold text-purple-600">13:30</span>
+                                        <span class="text-xs text-purple-500"> - </span>
+                                        <span class="text-sm font-bold text-purple-600">14:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Ing. Sanchéz Corona Valeria Samantha</span></p>
+                            <span class="text-sm font-medium text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Taller</span>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
-
-            <!-- Navegación entre días -->
-            <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-                <a href="index.html" class="bg-gray-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-600 transition duration-300">
-                    ← Volver al Inicio
-                </a>
-                <a href="dia2.html" class="bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                    Día 2 →
-                </a>
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->

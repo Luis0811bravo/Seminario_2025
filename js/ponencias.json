@@ -5,123 +5,370 @@
     "ponencias": [
       {
         "id": "ponencia-1-1",
-        "titulo": "ANÁLISIS DE LA CADENA DE VALOR DE LA CHÍA (Salvia hispánica L.) EN BOLIVIA",
-        "ponente": "MC. Ivon Arce Machuca",
-        "consejero": "DR. Javier Suárez Espinosa",
-        "horario": "09:00 - 09:30",
-        "descripcion": "Investigación de doctorado que analiza la cadena de valor de la chía boliviana, examinando los procesos productivos, comercialización y oportunidades de mejora en el sector.",
-        "avatar": "src/alumnos/Ivon.jpg",
-        "tipo": "doctorado",
+        "titulo": "Análisis espacial para la estimación de la adopción de innovaciones y tecnologías en la agricultura",
+        "ponente": "MC. Luis Adrián Bravo Anaya",
+        "horario": "10:00 - 10:10",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Luis-Adrian.jpg",
         "badgeColor": "blue",
-        "grado": "Doctorado"
+        "grado": "MC."
       },
       {
         "id": "ponencia-1-2",
-        "titulo": "EVALUACIÓN E INNOVACIÓN DE LA FÓRMULA Y MODELO EMPRESARIAL: CASOS DE ESTUDIOS",
-        "ponente": "MC. Diego Oscar Banda Moreno",
-        "consejero": "DRA. María del Carmen López Reyna",
-        "horario": "09:30 - 10:00",
-        "descripcion": "Estudio de doctorado enfocado en la evaluación y propuesta de innovaciones en modelos empresariales a través del análisis de casos específicos.",
-        "avatar": "src/alumnos/Diego.jpg",
-        "tipo": "doctorado",
+        "titulo": "La valorización y aprovechamiento de los residuos sólidos",
+        "ponente": "MC. Ilse Irene Gallegos Toledo",
+        "horario": "10:15 - 10:30",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Ilse.jpg",
         "badgeColor": "blue",
-        "grado": "Doctorado"
+        "grado": "MC."
       },
       {
         "id": "ponencia-1-3",
-        "titulo": "ANÁLISIS ESPACIAL PARA LA ESTIMACIÓN DE LA ADOPCIÓN DE INNOVACIONES Y TECNOLOGÍAS EN LA AGRICULTURA",
-        "ponente": "MC. Luis Adrian Bravo Anaya",
-        "consejero": "DR. José Miguel Omaña Silvestre",
-        "horario": "10:00 - 10:30",
-        "descripcion": "Investigación de doctorado que utiliza técnicas de análisis espacial para estudiar los patrones de adopción de tecnologías agrícolas.",
-        "avatar": "src/alumnos/Luis-Adrian.jpg",
-        "tipo": "doctorado",
-        "badgeColor": "gray",
-        "grado": "Doctorado"
+        "titulo": "Integración de la cadena de valor de mezcal artesanal. El caso de los productores del municipio de Huitzuco de los Figueroa, Guerrero.",
+        "ponente": "MC. Ana Mercedes González Espinosa",
+        "horario": "10:30 - 10:45",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Ana.jpg",
+        "badgeColor": "blue",
+        "grado": "MC."
       },
       {
         "id": "ponencia-1-4",
-        "titulo": "IDENTIFICAR PREFERENCIAS DEL CONSUMIDOR DE CARNE DE PAVO EN TRES CIUDADES DE MÉXICO",
-        "ponente": "MC. Mauricio Arturo Guillén Alvarado",
-        "consejero": "DR. Miguel Ángel Martínez Damián",
-        "horario": "10:30 - 11:00",
-        "descripcion": "Estudio de doctorado que analiza las preferencias del consumidor de carne de pavo en tres importantes ciudades mexicanas.",
-        "avatar": "src/alumnos/Mauricio.jpg",
-        "tipo": "doctorado",
-        "badgeColor": "sky",
-        "grado": "Doctorado"
-      },
-      {
-        "id": "receso",
-        "tipo": "receso",
-        "horario": "11:00 - 11:30",
-        "titulo": "Receso - Café y Networking"
+        "titulo": "Evaluación e innovación de la fórmula y modelo empresarial: casos de estudios",
+        "ponente": "MC. Diego Óscar Banda Moreno",
+        "horario": "10:45 - 11:00",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Diego.jpg",
+        "badgeColor": "blue",
+        "grado": "MC."
       },
       {
         "id": "ponencia-1-5",
-        "titulo": "MODELO DE RECONSTRUCCIÓN SOCIAL PARA ALCANZAR LA SOBERANÍA ALIMENTARIA EN AGUA BLANCA, HIDALGO",
+        "titulo": "Modelo de recontrucción social para alcanzar la soberanía en Agua Blanca, Hidalgo",
         "ponente": "MC. Alfredo Arias Castañeda",
-        "consejero": "DRA. Ángela Fontes Carrillo",
-        "horario": "11:30 - 12:00",
-        "descripcion": "Investigación de doctorado que propone un modelo de reconstrucción social orientado a lograr la soberanía alimentaria en la comunidad de Agua Blanca, Hidalgo.",
+        "horario": "11:00 - 11:15",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
         "avatar": "src/alumnos/Alfredo.jpg",
-        "tipo": "doctorado",
-        "badgeColor": "slate",
-        "grado": "Doctorado"
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "receso-1",
+        "titulo": "Receso - Café y Networking",
+        "horario": "11:15 - 11:45",
+        "tipo": "receso"
       },
       {
         "id": "ponencia-1-6",
-        "titulo": "LA VALORIZACIÓN Y APROVECHAMIENTO DE LOS RESIDUOS SÓLIDOS",
-        "ponente": "MC. Ilse Irene Gallegos Toledo",
-        "consejero": "DR. Oscar Antonio Arana Coronado",
-        "horario": "12:00 - 12:30",
-        "descripcion": "Estudio de doctorado sobre estrategias de valorización y aprovechamiento sustentable de residuos sólidos en contextos urbanos y rurales.",
-        "avatar": "src/alumnos/Ilse.jpg",
-        "tipo": "doctorado",
-        "badgeColor": "sky",
-        "grado": "Doctorado"
+        "titulo": "Adopción de bioplásticos en la agricultura mexicana: el caso de los empaques biodegradables",
+        "ponente": "Lic. Gabriela Herrera Solís",
+        "horario": "11:45 - 12:00",
+        "tipo": "ponencia",
+        "categoria": "maestria",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "green",
+        "grado": "Lic."
+      },
+      {
+        "id": "ponencia-1-7",
+        "titulo": "Análisis de los precios en el mercado global y nacional del aguacate",
+        "ponente": "Lic. Daniela López Carmona",
+        "horario": "12:00 - 12:15",
+        "tipo": "ponencia",
+        "categoria": "maestria",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "green",
+        "grado": "Lic."
+      },
+      {
+        "id": "ponencia-1-8",
+        "titulo": "Los biofertilizantes en el cultivo del aguacate",
+        "ponente": "MC. Abdiel Menchaca Aguilar",
+        "horario": "12:15 - 12:30",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "ponencia-1-9",
+        "titulo": "Mercado de la carne de cerdo en México: sus determinantes, impacto del COVID-19 e imposición de un arancel",
+        "ponente": "MC. Álvaro Nochebuena Molina",
+        "horario": "12:15 - 12:30",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Nochebuena.jpg",
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "ponencia-1-10",
+        "titulo": "Vulnerabilidad y riesgo crediticio de pequeños y medianos productores de maíz ante el cambio climático en México",
+        "ponente": "Lic. Alma Dennis Sánchez Rebollar",
+        "horario": "12:30 - 12:45",
+        "tipo": "ponencia",
+        "categoria": "maestria",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "green",
+        "grado": "Lic."
+      },
+      {
+        "id": "ponencia-1-11",
+        "titulo": "Propuesta de plan de mercadotecnia para la marca Semillas Xanat",
+        "ponente": "MC. Belén López Pérez",
+        "horario": "12:45 - 13:00",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "almuerzo",
+        "titulo": "Almuerzo - Networking",
+        "horario": "13:00 - 14:00",
+        "tipo": "almuerzo"
+      },
+      {
+        "id": "ponencia-1-12",
+        "titulo": "Caracterización de la cadena de valor de cacao (Theobroma cacao l.) en el Soconusco, Chiapas",
+        "ponente": "Lic. Montserrat Martínez Perfecto",
+        "horario": "14:00 - 14:15",
+        "tipo": "ponencia",
+        "categoria": "maestria",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "green",
+        "grado": "Lic."
+      },
+      {
+        "id": "ponencia-1-13",
+        "titulo": "Eficiencia en el manejo del agua de riego y de sus efectos ambientales",
+        "ponente": "MC. María Isabel Madrid Pérez",
+        "horario": "14:15 - 14:30",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "ponencia-1-14",
+        "titulo": "Evaluación de la sostenibilidad de los sistemas agroecológicos del distrito de desarrollo rural 003 Tulancingo-Huauchinango",
+        "ponente": "MC. Armando Ramírez Román",
+        "horario": "14:30 - 14:45",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "cartel-1-1",
+        "titulo": "Costos de producción de una unidad de aceituna (Olea europea L.) en la localidad El Olivo Ixmiquilpan, Hidalgo",
+        "ponente": "MC. Cecilia Salmerón Vázquez",
+        "horario": "13:15 - 13:25",
+        "tipo": "cartel",
+        "categoria": "doctorado",
+        "avatar": "src/talleres/cartel.jpg",
+        "badgeColor": "purple",
+        "grado": "MC."
+      },
+      {
+        "id": "cartel-1-2",
+        "titulo": "Determinantes del consumo de leche bovina y sutitutos de leche en el municipio de Texcoco, Estado de México",
+        "ponente": "Lic. Fabiola Ramírez Cordero",
+        "horario": "13:25 - 13:35",
+        "tipo": "cartel",
+        "categoria": "maestria",
+        "avatar": "src/talleres/cartel.jpg",
+        "badgeColor": "purple",
+        "grado": "Lic."
+      },
+      {
+        "id": "cartel-1-3",
+        "titulo": "Eventos de distorsión en la fuerza laboral hispana en EE UU y su transmisión en las remesas a México",
+        "ponente": "MC. Rohel Ríos Cruz",
+        "horario": "13:35 - 13:45",
+        "tipo": "cartel",
+        "categoria": "doctorado",
+        "avatar": "src/talleres/cartel.jpg",
+        "badgeColor": "purple",
+        "grado": "MC."
+      },
+      {
+        "id": "taller-1-1",
+        "titulo": "Extracción e identificación de metabolitos producidos por Chaetomium globosum como alternativa para el biocontrol de neopestaliopsis spp",
+        "ponente": "Ing. Sanchéz Corona Valeria Samantha",
+        "horario": "14:45 - 14:55",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/alumnos/Valeria.jpg",
+        "badgeColor": "purple",
+        "grado": "Ing."
       }
     ]
   },
   "dia2": {
     "fecha": "14 de Noviembre, 2025",
-    "lugar": "Salón Ázul",
+    "lugar": "Salón Verde - Edificio Principal",
     "ponencias": [
       {
+        "id": "participacion-consejeros",
+        "titulo": "Participación de profesores consejeros",
+        "horario": "9:00 - 10:00",
+        "tipo": "evento",
+        "categoria": "general"
+      },
+      {
         "id": "ponencia-2-1",
-        "titulo": "Lorem ipsum dolor sit amet",
-        "ponente": "lorem ipsum",
-        "horario": "09:00 - 09:45",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras vehicula, magna at cursus tincidunt, nulla mauris.",
-        "avatar": "https://placehold.co/80x80/FEE2E2/EF4444?text=IN",
-        "tipo": "biotecnologia",
-        "badgeColor": "red"
+        "titulo": "Identificar preferencias del consumidor de carne de pavo en tres ciudades de México",
+        "ponente": "MC. Mauricio Arturo Guillén Alvarado",
+        "horario": "10:00 - 10:15",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Mauricio.jpg",
+        "badgeColor": "blue",
+        "grado": "MC."
       },
       {
         "id": "ponencia-2-2",
-        "titulo": "Lorem ipsum dolor sit amet",
-        "ponente": "lorem ipsum",
-        "horario": "10:00 - 10:45",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.",
-        "avatar": "https://placehold.co/80x80/FEFCE8/EAB308?text=RM",
-        "tipo": "economia",
-        "badgeColor": "yellow"
+        "titulo": "Análisis de la cadena de valor de la chía (Salvia hispanica L.) en Bolivia",
+        "ponente": "MC. Ivon Arce Machuca",
+        "horario": "10:15 - 10:30",
+        "tipo": "ponencia",
+        "categoria": "doctorado",
+        "avatar": "src/alumnos/Ivon.jpg",
+        "badgeColor": "blue",
+        "grado": "MC."
+      },
+      {
+        "id": "taller-2-1",
+        "titulo": "Manejo alternativo de plagas orientado a extractos vegetales",
+        "talleristas": "Ing. José de Jesús Macedo G. / Ing. Osiel Valverde Lucas",
+        "horario": "10:30 - 11:00",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/talleres/taller.jpg",
+        "badgeColor": "green",
+        "grado": "Ing."
+      },
+      {
+        "id": "taller-2-2",
+        "titulo": "El ajo (Allium sativum): importancia agrícola y retos fitosanitarios",
+        "tallerista": "Ing. Citlalmina Erandy Montes Hernández",
+        "horario": "11:00 - 11:30",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/alumnos/Citlalmina.jpg",
+        "badgeColor": "green",
+        "grado": "Ing."
+      },
+      {
+        "id": "taller-2-3",
+        "titulo": "Evaluación del efecto de microorganismos nativos en la síntesis de metabolitos secundarios en Justicia spicigera (muitle)",
+        "tallerista": "Ing. Ramón García Díaz",
+        "horario": "11:30 - 12:00",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/alumnos/Ramon.jpg",
+        "badgeColor": "green",
+        "grado": "Ing."
+      },
+      {
+        "id": "taller-2-4",
+        "titulo": "traspaso de la tasa de cambio",
+        "talleristas": "Dr. Miguel Angel Martínez Damián / Dr. Jaime Arturo Matus Gardea",
+        "horario": "12:00 - 12:15",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/talleres/taller.jpg",
+        "badgeColor": "green",
+        "grado": "Dr."
+      },
+      {
+        "id": "receso-2",
+        "titulo": "Receso - Café y Networking",
+        "horario": "12:15 - 12:40",
+        "tipo": "receso"
       },
       {
         "id": "ponencia-2-3",
-        "titulo": "Lorem ipsum dolor sit amet",
-        "ponente": "lorem ipsum",
-        "horario": "11:00 - 11:45",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
-        "avatar": "https://placehold.co/80x80/E0F2F1/10B981?text=DC",
-        "tipo": "artes",
-        "badgeColor": "green"
+        "titulo": "Competitividad territorial en un sistema agroalimentario localizado de fresa",
+        "ponente": "Lic. Ángeles Julieta Martínez Mendoza",
+        "horario": "12:40 - 12:55",
+        "tipo": "ponencia",
+        "categoria": "maestria",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "green",
+        "grado": "Lic."
       },
       {
-        "id": "clausura",
-        "tipo": "clausura",
-        "horario": "12:00 - 13:00",
-        "titulo": "Lorem ipsum dolor sit ameta"
+        "id": "taller-2-5",
+        "titulo": "Finanzas personales y Riesgo",
+        "talleristas": "MC. José Luis Rodríguez Pineda / MC. Juan Antonio Islas Samaniego",
+        "horario": "12:40 - 13:10",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/alumnos/Jose-Luis.jpg",
+        "badgeColor": "green",
+        "grado": "MC."
+      },
+      {
+        "id": "taller-2-6",
+        "titulo": "Estrategias comerciales y sistema de producción agroecológica",
+        "tallerista": "MC. Diego Óscar Banda Moreno",
+        "horario": "13:10 - 13:40",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/alumnos/Diego.jpg",
+        "badgeColor": "green",
+        "grado": "MC."
+      },
+      {
+        "id": "taller-2-7",
+        "titulo": "Elaboración de sales de cempasuchitl",
+        "tallerista": "Ing. Valentina Trueba",
+        "horario": "13:40 - 14:10",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/talleres/Cleito.jpg",
+        "badgeColor": "green",
+        "grado": "Ing."
+      },
+      {
+        "id": "taller-2-8",
+        "titulo": "Presentación física de mieles y como identificar las mieles falsas",
+        "tallerista": "Ing. María Paula Rodríguez",
+        "horario": "14:10 - 14:40",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/talleres/miel.jpg",
+        "badgeColor": "green",
+        "grado": "Ing."
+      },
+      {
+        "id": "taller-2-9",
+        "titulo": "El arte del método de estudio de casos en la investigación y enseñanza de agronegocios",
+        "tallerista": "Dra. Ma. del Carmen López Reyna",
+        "horario": "14:40 - 14:55",
+        "tipo": "taller",
+        "categoria": "taller",
+        "avatar": "src/talleres/taller.jpg",
+        "badgeColor": "green",
+        "grado": "Dra."
+      },
+      {
+        "id": "cierre",
+        "titulo": "Clausura del Seminario",
+        "horario": "14:55 - 15:00",
+        "tipo": "clausura"
       }
     ]
   }
