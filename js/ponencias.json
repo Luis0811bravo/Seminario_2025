@@ -11,9 +11,20 @@
         "categoria": "general"
       },
       {
+        "id": "ponencia-institucional",
+        "titulo": "Nuevas consideraciones sobre procesos de investigación en el COLPOS: Secretaria de Ciencia y Tecnología y SADER",
+        "ponente": "Dra. Ángela Fontes Carrillo",
+        "horario": "9:30 - 9:45",
+        "tipo": "ponencia",
+        "categoria": "academico",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
+        "badgeColor": "purple",
+        "grado": "Dra."
+      },
+      {
         "id": "participacion-consejeros-1",
         "titulo": "Participación de profesores consejeros",
-        "horario": "9:30 - 10:00",
+        "horario": "9:45 - 10:00",
         "tipo": "evento",
         "categoria": "general"
       },
@@ -379,13 +390,13 @@
         "grado": "Ing."
       },
       {
-        "id": "taller-2-9",
+        "id": "ponencia-2-3",
         "titulo": "El arte del método de estudio de casos en la investigación y enseñanza de agronegocios",
-        "tallerista": "Dra. Ma. del Carmen López Reyna",
+        "ponente": "Dra. Ma. del Carmen López Reyna",
         "horario": "14:25 - 14:40",
-        "tipo": "taller",
+        "tipo": "ponencia",
         "categoria": "academico",
-        "avatar": "src/talleres/taller.jpg",
+        "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
         "badgeColor": "purple",
         "grado": "Dra."
       },
