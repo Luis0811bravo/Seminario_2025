@@ -43,7 +43,25 @@ class SeminarioManager {
         
         // Renderizar cada sección
         this.renderizarSeccion('ponencias', ponencias);
-        this.renderizarSeccion('talleres', talleres);
+        
+        // Para día 2, dividir talleres en dos secciones
+        if (dia === 'dia2') {
+            // Talleres primera sesión (10:20 - 12:05): taller-2-1 a taller-2-4
+            const talleresPrimera = talleres.filter(t => 
+                ['taller-2-1', 'taller-2-2', 'taller-2-3', 'taller-2-4'].includes(t.id)
+            );
+            
+            // Talleres segunda sesión (12:25 - 14:40): taller-2-5 a taller-2-9
+            const talleresSegunda = talleres.filter(t => 
+                ['taller-2-5', 'taller-2-6', 'taller-2-7', 'taller-2-8', 'taller-2-9'].includes(t.id)
+            );
+            
+            this.renderizarSeccion('talleres-primera', talleresPrimera);
+            this.renderizarSeccion('talleres-segunda', talleresSegunda);
+        } else {
+            this.renderizarSeccion('talleres', talleres);
+        }
+        
         this.renderizarSeccion('carteles', carteles);
     }
 
@@ -124,6 +142,7 @@ class SeminarioManager {
     obtenerBadgeTexto(item) {
         if (item.tipo === 'taller') return 'Taller';
         if (item.tipo === 'cartel') return 'Cartel';
+        if (item.categoria === 'academico') return 'Académico';
         return item.categoria === 'doctorado' ? 'Doctorado' : 'Maestría';
     }
 
@@ -154,7 +173,9 @@ class SeminarioManager {
     crearMensajeVacio(tipo) {
         const mensajes = {
             'ponencias': 'No hay ponencias programadas',
-            'talleres': 'No hay talleres programados', 
+            'talleres': 'No hay talleres programados',
+            'talleres-primera': 'No hay talleres programados para la primera sesión',
+            'talleres-segunda': 'No hay talleres programados para la segunda sesión',
             'carteles': 'No hay carteles programados'
         };
         

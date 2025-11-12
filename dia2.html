@@ -87,7 +87,7 @@
         
         <!-- Eventos especiales -->
         <section style="margin: 40px 0;">
-            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #e5e7eb; text-align: center;">📅 Eventos Especiales</h2>
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #e5e7eb; text-align: center;">Apertura</h2>
             
             <!-- Reunión Consejeros -->
             <article class="seminario-card tipo-evento" style="border-left-color: #6b7280;">
@@ -104,7 +104,7 @@
                         <div class="horario-box">9:00 - 10:00</div>
                     </div>
                     <div class="badge-section">
-                        <span class="badge" style="background: #fef3c7; color: #92400e;">Reunión</span>
+                        <span class="badge" style="background: #fef3c7; color: #92400e;">Apertura</span>
                     </div>
                 </div>
             </article>
@@ -121,24 +121,118 @@
             </div>
         </section>
 
-        <!-- Sección Talleres -->
+        <!-- Sección Talleres - Primera Parte -->
         <section style="margin: 40px 0;">
-            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #10b981; text-align: center;">🛠️ Talleres</h2>
-            <div id="talleres-container">
-                <!-- Los talleres se cargarán aquí dinámicamente -->
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #10b981; text-align: center;">🛠️ Talleres - Primera Sesión</h2>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="background: #ecfdf5; color: #065f46; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid #a7f3d0;">
+                    ⏰ 10:20 - 12:05
+                </span>
+            </div>
+            <div id="talleres-primera-container">
+                <!-- Los talleres de la primera sesión se cargarán aquí dinámicamente -->
                 <div style="text-align: center; padding: 40px; color: #6b7280;">
-                    <p>⏳ Cargando talleres...</p>
+                    <p>⏳ Cargando talleres primera sesión...</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Sección Receso -->
+        <section style="margin: 40px 0;">
+            <article class="seminario-card tipo-evento" style="border-left-color: #f59e0b; background: linear-gradient(135deg, #fefbeb 0%, #fef3c7 100%);">
+                <div class="card-content">
+                    <div class="avatar-section">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">☕</div>
+                    </div>
+                    <div class="info-section">
+                        <h3 class="titulo">Receso - Café y Networking</h3>
+                        <p style="color: #6b7280; font-size: 14px; margin: 8px 0;">
+                            Pausa para networking, café y preparación para la sesión de carteles.
+                        </p>
+                    </div>
+                    <div class="horario-section">
+                        <div class="horario-inicio">12:05</div>
+                        <div class="horario-fin">12:15</div>
+                        <div class="horario-box">12:05 - 12:15</div>
+                    </div>
+                    <div class="badge-section">
+                        <span class="badge" style="background: #fef3c7; color: #92400e;">Receso</span>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <!-- Sección Carteles -->
         <section style="margin: 40px 0;">
             <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #8b5cf6; text-align: center;">📊 Carteles</h2>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="background: #f5f3ff; color: #5b21b6; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid #c4b5fd;">
+                    ⏰ 12:15 - 12:25
+                </span>
+            </div>
             <div id="carteles-container">
                 <!-- Los carteles se cargarán aquí dinámicamente -->
                 <div style="text-align: center; padding: 40px; color: #6b7280;">
                     <p>⏳ Cargando carteles...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Talleres - Segunda Parte -->
+        <section style="margin: 40px 0;">
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #10b981; text-align: center;">🛠️ Talleres - Segunda Sesión</h2>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="background: #ecfdf5; color: #065f46; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid #a7f3d0;">
+                    ⏰ 12:25 - 14:40
+                </span>
+            </div>
+            <div id="talleres-segunda-container">
+                <!-- Los talleres de la segunda sesión se cargarán aquí dinámicamente -->
+                <div style="text-align: center; padding: 40px; color: #6b7280;">
+                    <p>⏳ Cargando talleres segunda sesión...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Clausura del Evento -->
+        <section style="margin: 40px 0;">
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #dc2626; text-align: center;">🎓 Clausura del Evento</h2>
+            
+            <!-- Evento de Clausura -->
+            <article class="seminario-card tipo-evento" style="border-left-color: #dc2626; background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);">
+                <div class="card-content">
+                    <div class="avatar-section">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);">🎓</div>
+                    </div>
+                    <div class="info-section">
+                        <h3 class="titulo">Clausura del Segundo Seminario de Avances de Investigación</h3>
+                        <p style="color: #6b7280; font-size: 14px; margin: 8px 0; line-height: 1.5;">
+                            Ceremonia de clausura y reconocimientos. Palabras finales del Comité Académico y agradecimientos a participantes y ponentes.
+                        </p>
+                    </div>
+                    <div class="horario-section">
+                        <div class="horario-inicio">14:40</div>
+                        <div class="horario-fin">15:00</div>
+                        <div class="horario-box">14:40 - 15:00</div>
+                    </div>
+                    <div class="badge-section">
+                        <span class="badge" style="background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5;">Clausura</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Mensaje de agradecimiento -->
+            <div style="margin-top: 30px; padding: 24px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; border: 1px solid #bae6fd; text-align: center; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);">
+                <h3 style="color: #0c4a6e; font-size: 20px; font-weight: 600; margin: 0 0 12px 0;">¡Gracias por participar!</h3>
+                <p style="color: #0369a1; line-height: 1.6; margin: 0; max-width: 600px; margin: 0 auto;">
+                    Agradecemos a todos los ponentes, talleristas y asistentes por hacer posible este segundo seminario. 
+                    Su participación contribuye al avance del conocimiento en economía y agronegocios.
+                </p>
+                <div style="margin-top: 16px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="background: #dbeafe; color: #1e40af; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 500;">👏 Ponentes</span>
+                    <span style="background: #dcfce7; color: #166534; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 500;">🛠️ Talleristas</span>
+                    <span style="background: #fed7aa; color: #9a3412; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 500;">📊 Carteles</span>
+                    <span style="background: #f3e8ff; color: #7c3aed; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 500;">🎯 Asistentes</span>
                 </div>
             </div>
         </section>

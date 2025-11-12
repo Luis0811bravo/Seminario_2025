@@ -1,7 +1,7 @@
 {
   "dia1": {
     "fecha": "13 de Noviembre, 2025",
-    "lugar": "Salón Azul - Edificio Principal",
+    "lugar": "Salón Azul",
     "ponencias": [
       {
         "id": "inauguracion",
@@ -20,7 +20,7 @@
       {
         "id": "ponencia-1-1",
         "titulo": "Análisis espacial para la estimación de la adopción de innovaciones y tecnologías en la agricultura",
-        "ponente": "MC. Luis Adrian Bravo Anaya",
+        "ponente": "MC. Luis Adrián Bravo Anaya",
         "horario": "10:00 - 10:10",
         "tipo": "ponencia",
         "categoria": "doctorado",
@@ -52,7 +52,7 @@
       },
       {
         "id": "ponencia-1-4",
-        "titulo": "Evaluación e innovación de la fórmula y modelo empresarial: casos de estudios",
+        "titulo": "Evaluación e innovación de la fórmula y modelo empresarial: casos de estudio",
         "ponente": "MC. Diego Oscar Banda Moreno",
         "horario": "10:30 - 10:40",
         "tipo": "ponencia",
@@ -84,7 +84,7 @@
         "ponente": "Dra. Laura Elena Garza Bueno",
         "horario": "11:00 - 11:15",
         "tipo": "ponencia",
-        "categoria": "magistral",
+        "categoria": "academico",
         "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
         "badgeColor": "purple",
         "grado": "Dra."
@@ -92,7 +92,7 @@
       {
         "id": "ponencia-1-7",
         "titulo": "Demanda discreta del tejocote",
-        "ponente": "Lic. Gabriela Herrera Solis",
+        "ponente": "Lic. Gabriela Herrera Solís",
         "horario": "11:15 - 11:25",
         "tipo": "ponencia",
         "categoria": "maestria",
@@ -103,7 +103,7 @@
       {
         "id": "ponencia-1-8",
         "titulo": "Evaluación Socioeconómica de la cooperativa \"Nangile Yanaxó\" de Santa Cruz Acatepec, Oaxaca",
-        "ponente": "Lic. Daniela Lopez Carmona",
+        "ponente": "Lic. Daniela López Carmona",
         "horario": "11:25 - 11:35",
         "tipo": "ponencia",
         "categoria": "maestria",
@@ -125,7 +125,7 @@
       {
         "id": "ponencia-1-10",
         "titulo": "Mercado de la carne de cerdo en México: sus determinantes, impacto del COVID-19 e imposición de un arancel",
-        "ponente": "MC. Alvaro Nochebuena Molina",
+        "ponente": "MC. Álvaro Nochebuena Molina",
         "horario": "11:45 - 11:55",
         "tipo": "ponencia",
         "categoria": "doctorado",
@@ -136,18 +136,18 @@
       {
         "id": "ponencia-1-11",
         "titulo": "Modelo de desarrollo regenerativo para la región Vaso de Texcoco basado en la cosmovisión regional",
-        "ponente": "MC. Alma Dennis Sánchez Rebollar",
+        "ponente": "Lic. Alma Dennis Sánchez Rebollar",
         "horario": "11:55 - 12:05",
         "tipo": "ponencia",
-        "categoria": "doctorado",
+        "categoria": "maestria",
         "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
-        "badgeColor": "blue",
-        "grado": "MC."
+        "badgeColor": "green",
+        "grado": "Lic."
       },
       {
         "id": "ponencia-1-12",
         "titulo": "Modelo de desarrollo comunitario regenerativo: prácticas de intercambio ancestral del trueque en el ejido Nuevo Veracruz, Chiapas",
-        "ponente": "MC. Belén López Perez",
+        "ponente": "MC. Belén López Pérez",
         "horario": "12:05 - 12:15",
         "tipo": "ponencia",
         "categoria": "doctorado",
@@ -169,24 +169,24 @@
       {
         "id": "ponencia-1-14",
         "titulo": "Crecimiento económico y degradación ambiental en México: Evidencia empírica 1993-2023",
-        "ponente": "Lic. Maria Isabel Madrid Perez",
+        "ponente": "MC. María Isabel Madrid Pérez",
         "horario": "12:25 - 12:35",
         "tipo": "ponencia",
-        "categoria": "maestria",
+        "categoria": "doctorado",
         "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
-        "badgeColor": "green",
-        "grado": "Lic."
+        "badgeColor": "blue",
+        "grado": "MC."
       },
       {
         "id": "ponencia-1-15",
         "titulo": "Medición de la inclusión financiera en México",
-        "ponente": "Lic. Armando Ramírez Román",
+        "ponente": "MC. Armando Ramírez Román",
         "horario": "12:35 - 12:45",
         "tipo": "ponencia",
-        "categoria": "maestria",
+        "categoria": "doctorado",
         "avatar": "https://placehold.co/112x112/EBF4FF/3B82F6?text=Perfil",
-        "badgeColor": "green",
-        "grado": "Lic."
+        "badgeColor": "blue",
+        "grado": "MC."
       },
       {
         "id": "receso-2",
@@ -197,7 +197,7 @@
       {
         "id": "cartel-1-1",
         "titulo": "Costos de producción de una unidad de producción de aceituna (Olea europea L.) en la localidad El Olivo Ixmiquilpan Hidalgo",
-        "ponente": "Lic. Cecilia Salmeron Vazquez",
+        "ponente": "Lic. Cecilia Salmerón Vázquez",
         "horario": "13:00 - 13:10",
         "tipo": "cartel",
         "categoria": "cartel",
@@ -219,7 +219,7 @@
       {
         "id": "cartel-1-3",
         "titulo": "Eventos de distorsión en la fuerza laboral hispana en EE.UU. y su transmisión en las remesas a México",
-        "ponente": "Lic. Rohel Rios Cruz",
+        "ponente": "MC. Rohel Rios Cruz",
         "horario": "13:20 - 13:30",
         "tipo": "cartel",
         "categoria": "cartel",
@@ -230,12 +230,12 @@
       {
         "id": "taller-1-1",
         "titulo": "Extracción e identificación de metabolitos producidos por Chaetomium globosum como alternativa para el biocontrol de Neopestalotiopsis spp",
-        "ponente": "Lic. Valeria Samantha Sanchez Corona",
+        "ponente": "Ing. Valeria Samantha Sanchez Corona",
         "horario": "13:30 - 14:00",
         "tipo": "taller",
         "categoria": "taller",
         "avatar": "src/alumnos/Valeria.jpg",
-        "badgeColor": "purple",
+        "badgeColor": "green",
         "grado": "Ing."
       }
     ]
@@ -287,7 +287,7 @@
       {
         "id": "taller-2-2",
         "titulo": "El ajo (Allium sativum): importancia agrícola y retos fitosanitarios",
-        "tallerista": "Lic. Citlalmina Erandy Montes Hernández",
+        "tallerista": "Ing. Citlalmina Erandy Montes Hernández",
         "horario": "10:50 - 11:20",
         "tipo": "taller",
         "categoria": "taller",
@@ -298,7 +298,7 @@
       {
         "id": "taller-2-3",
         "titulo": "Evaluación del efecto de microorganismos nativos en la síntesis de metabolitos secundarios en Justicia spicigera (muitle)",
-        "tallerista": "Lic. Ramón García Díaz",
+        "tallerista": "Ing. Ramón García Díaz",
         "horario": "11:20 - 11:50",
         "tipo": "taller",
         "categoria": "taller",
@@ -309,12 +309,12 @@
       {
         "id": "taller-2-4",
         "titulo": "Traspaso de la tasa de cambio",
-        "talleristas": "Dr. Miguel Angel Martínez Damián / Dr. Jaime Arturo Matus Gardea",
+        "talleristas": "Dr. Miguel Ángel Martínez Damián / Dr. Jaime Arturo Matus Gardea",
         "horario": "11:50 - 12:05",
         "tipo": "taller",
-        "categoria": "taller",
+        "categoria": "academico",
         "avatar": "src/talleres/taller.jpg",
-        "badgeColor": "green",
+        "badgeColor": "purple",
         "grado": "Dr."
       },
       {
@@ -326,7 +326,7 @@
       {
         "id": "cartel-2-1",
         "titulo": "Modelo de exportación de productos agrícolas mexicanos a Europa",
-        "ponente": "Lic. Angeles Julieta Martínez Mendoza",
+        "ponente": "Lic. Ángeles Julieta Martínez Mendoza",
         "horario": "12:15 - 12:25",
         "tipo": "cartel",
         "categoria": "cartel",
@@ -358,8 +358,8 @@
       },
       {
         "id": "taller-2-7",
-        "titulo": "Elaboración de sales de cempasuchitl",
-        "tallerista": "Lic. Valentina Trueba",
+        "titulo": "Elaboración de sales de cempasúchil",
+        "tallerista": "Ing. Valentina Trueba",
         "horario": "13:25 - 13:55",
         "tipo": "taller",
         "categoria": "taller",
@@ -370,7 +370,7 @@
       {
         "id": "taller-2-8",
         "titulo": "Presentación física de mieles y como identificar las mieles falsas",
-        "tallerista": "Lic. María Paula Rodríguez",
+        "tallerista": "Ing. María Paula Rodríguez",
         "horario": "13:55 - 14:25",
         "tipo": "taller",
         "categoria": "taller",
@@ -384,9 +384,9 @@
         "tallerista": "Dra. Ma. del Carmen López Reyna",
         "horario": "14:25 - 14:40",
         "tipo": "taller",
-        "categoria": "taller",
+        "categoria": "academico",
         "avatar": "src/talleres/taller.jpg",
-        "badgeColor": "green",
+        "badgeColor": "purple",
         "grado": "Dra."
       },
       {

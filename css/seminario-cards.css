@@ -234,3 +234,21 @@ body {
     flex-direction: column;
     gap: 20px;
 }
+
+/* ===== AJUSTES ESPECÍFICOS PARA IMÁGENES PARTICULARES ===== */
+
+/* Imagen de miel - mostrar completa sin recortar */
+.seminario-card .avatar[src*="miel.jpg"] {
+    object-fit: contain !important;
+    background: #fef3c7;
+    padding: 8px;
+}
+
+/* En móvil también aplicar el mismo ajuste */
+@media (max-width: 767px) {
+    .seminario-card .avatar[src*="miel.jpg"] {
+        object-fit: contain !important;
+        background: #fef3c7;
+        padding: 6px;
+    }
+}
