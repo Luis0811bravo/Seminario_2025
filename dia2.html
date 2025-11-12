@@ -9,7 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- NUEVO SISTEMA CSS RESPONSIVE -->
+    <link rel="stylesheet" href="css/seminario-cards.css">
+    
+    <style>
+        html, body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -32,7 +47,6 @@
                 <div class="flex items-center">
                     <div class="hidden md:flex items-center space-x-8">
                         <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Inicio</a>
-                        <span class="nav-link text-gray-400 font-medium pb-1 cursor-not-allowed opacity-50">Proyectos</span>
                         <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 1</a>
                         <a href="dia2.html" class="nav-link text-green-600 border-b-2 border-green-600 font-medium transition duration-300 pb-1 active">Día 2</a>
                     </div>
@@ -63,296 +77,145 @@
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Inicio</a>
-            <span class="block py-2 px-4 text-sm text-gray-400 cursor-not-allowed opacity-50">Proyectos</span>
             <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 1</a>
             <a href="dia2.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-green-50 text-green-600 font-semibold">Día 2</a>
         </div>
     </header>
-        </div>
-    </header>
 
-    <main class="container mx-auto px-6 py-12">
-        <!-- Página Día 2 -->
-        <section id="dia2" class="py-20 bg-white">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">AGENDA</h2>
-                <div class="space-y-8">
-
-                    <!-- Evento: Consejeros -->
-                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-gray-400">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-gray-800">9:00</span>
-                            <span class="text-gray-500">10:00</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-1">Participación de profesores consejeros</h3>
-                            <span class="text-sm font-medium text-gray-500 bg-gray-100 py-1 px-3 rounded-full">Evento General</span>
-                        </div>
+    <!-- Contenido principal -->
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 20px; background-color: #f9fafb;">
+        
+        <!-- Eventos especiales -->
+        <section style="margin: 40px 0;">
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #e5e7eb; text-align: center;">📅 Eventos Especiales</h2>
+            
+            <!-- Reunión Consejeros -->
+            <article class="seminario-card tipo-evento" style="border-left-color: #6b7280;">
+                <div class="card-content">
+                    <div class="avatar-section">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">👥</div>
                     </div>
-                    
-                    <!-- Bloque Presentaciones -->
-                    <div class="text-center py-4 bg-blue-100 text-blue-800 font-bold rounded-lg">
-                        PRIMER BLOQUE: PRESENTACIONES
+                    <div class="info-section">
+                        <h3 class="titulo">Participación de profesores consejeros</h3>
                     </div>
-
-                    <!-- Ponencia -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Mauricio.jpg" alt="MC. Mauricio Arturo Guillén Alvarado">
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="text-lg font-bold text-gray-800">Identificar preferencias del consumidor de carne de pavo en tres ciudades de México</h3>
-                                <div class="text-right ml-4 flex-shrink-0">
-                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
-                                        <span class="text-sm font-bold text-blue-600">10:00</span>
-                                        <span class="text-xs text-blue-500"> - </span>
-                                        <span class="text-sm font-bold text-blue-600">10:10</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Mauricio Arturo Guillén Alvarado</span></p>
-                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
-                        </div>
+                    <div class="horario-section">
+                        <div class="horario-inicio">9:00</div>
+                        <div class="horario-fin">10:00</div>
+                        <div class="horario-box">9:00 - 10:00</div>
                     </div>
-
-                    <!-- Ponencia -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Ivon.jpg" alt="MC. Ivon Arce Machuca">
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="text-lg font-bold text-gray-800">Análisis de la cadena de valor de la chía (<em>Salvia hispanica</em> L.) en Bolivia</h3>
-                                <div class="text-right ml-4 flex-shrink-0">
-                                    <div class="bg-blue-50 px-3 py-1 rounded-lg">
-                                        <span class="text-sm font-bold text-blue-600">10:10</span>
-                                        <span class="text-xs text-blue-500"> - </span>
-                                        <span class="text-sm font-bold text-blue-600">10:20</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">MC. Ivon Arce Machuca</span></p>
-                            <span class="text-sm font-medium text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Doctorado</span>
-                        </div>
+                    <div class="badge-section">
+                        <span class="badge" style="background: #fef3c7; color: #92400e;">Reunión</span>
                     </div>
+                </div>
+            </article>
+        </section>
 
-                    <!-- Bloque Talleres -->
-                    <div class="text-center py-4 bg-green-100 text-green-800 font-bold rounded-lg">
-                        SEGUNDO BLOQUE: TALLERES
-                    </div>              
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">10:20</span>
-                            <span class="text-gray-500">10:50</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Manejo alternativo de plagas orientado a extractos vegetales </h3>
-                            <p class="text-gray-500 text-sm mb-3">Talleristas: <span class="font-semibold text-gray-700">Ing. José de Jesús Macedo G. / Ing. Osiel Valverde Lucas</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/taller.jpg" alt="Taller Especializado">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">10:50</span>
-                            <span class="text-gray-500">11:20</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">El ajo (<em>Allium sativum</em>): importancia agrícola y retos fitosanitarios</h3>
-                            <p class="text-gray-500 text-sm mb-3">Tallerista: <span class="font-semibold text-gray-700">Ing. Citlalmina Erandy Montes Hernández</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-contain shadow-md" src="src/alumnos/Citlalmina.jpg" alt="Ing. Citlalmina Erandy Montes Hernández">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">11:20</span>
-                            <span class="text-gray-500">11:50</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Evaluación del efecto de microorganismos nativos en la síntesis de metabolitos secundarios en <em>Justicia spicigera</em> (muitle)</h3>
-                            <p class="text-gray-500 text-sm mb-3">Tallerista: <span class="font-semibold text-gray-700">Ing. Ramón García Díaz</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Ramon.jpg" alt="Ing. Ramón García Díaz">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">11:50</span>
-                            <span class="text-gray-500">12:05</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Traspaso de la tasa de cambio</h3>
-                            <p class="text-gray-500 text-sm mb-3">Talleristas: <span class="font-semibold text-gray-700">Dr. Miguel Angel Martínez Damián / Dr. Jaime Arturo Matus Gardea</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Ponencia</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/taller.jpg" alt="Taller Especializado">
-                        </div>
-                    </div>
-
-                    <!-- Evento: Receso -->
-                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-yellow-600">12:05</span>
-                            <span class="text-gray-500">12:15</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-1">RECESO</h3>
-                            <span class="text-sm font-medium text-yellow-600 bg-yellow-100 py-1 px-3 rounded-full">Receso</span>
-                        </div>
-                    </div>
-
-                    <!-- Bloque Presentaciones -->
-                    <div class="text-center py-4 bg-purple-100 text-purple-800 font-bold rounded-lg">
-                        TERCER BLOQUE: CARTELES Y TALLERES
-                    </div>
-
-                    <!-- Cartel -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="https://placehold.co/80x80/EBF4FF/3B82F6?text=Perfil" alt="Foto del Ponente">
-                        </div>
-                        <div class="flex-1">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="text-lg font-bold text-gray-800">Modelo de exportación de productos agrícolas mexicanos a Europa</h3>
-                                <div class="text-right ml-4 flex-shrink-0">
-                                    <div class="bg-purple-50 px-3 py-1 rounded-lg">
-                                        <span class="text-sm font-bold text-purple-600">12:15</span>
-                                        <span class="text-xs text-purple-500"> - </span>
-                                        <span class="text-sm font-bold text-purple-600">12:25</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-gray-500 text-sm mb-3">Ponente: <span class="font-semibold text-gray-700">Lic. Ángeles Julieta Martínez Mendoza</span></p>
-                            <span class="text-sm font-medium text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Cartel</span>
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">12:25</span>
-                            <span class="text-gray-500">12:55</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Finanzas personales y Riesgo</h3>
-                            <p class="text-gray-500 text-sm mb-3">Talleristas: <span class="font-semibold text-gray-700">MC. José Luis Rodríguez Pineda / MC. Juan Antonio Islas Samaniego</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Jose-Luis.jpg" alt="MC. José Luis Rodríguez Pineda">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">12:55</span>
-                            <span class="text-gray-500">13:25</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Estrategias comerciales y sistema de producción agroecológica</h3>
-                            <p class="text-gray-500 text-sm mb-3">Tallerista: <span class="font-semibold text-gray-700">MC. Diego Óscar Banda Moreno</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/alumnos/Diego.jpg" alt="MC. Diego Óscar Banda Moreno">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">13:25</span>
-                            <span class="text-gray-500">13:55</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Elaboración de sales de cempasuchitl</h3>
-                            <p class="text-gray-500 text-sm mb-3">Tallerista: <span class="font-semibold text-gray-700">Ing. Valentina Trueba</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/Cleito.jpg" alt="Taller Especializado">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">13:55</span>
-                            <span class="text-gray-500">14:25</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Presentación física de mieles y como identificar las mieles falsas</h3>
-                            <p class="text-gray-500 text-sm mb-3">Tallerista: <span class="font-semibold text-gray-700">Ing. María Paula Rodríguez</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-contain shadow-md" src="src/talleres/miel.jpg" alt="Taller Especializado">
-                        </div>
-                    </div>
-
-                    <!-- Taller -->
-                    <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-green-600">14:25</span>
-                            <span class="text-gray-500">14:40</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">El arte del método de estudio de casos en la investigación y enseñanza de agronegocios</h3>
-                            <p class="text-gray-500 text-sm mb-3">Tallerista: <span class="font-semibold text-gray-700">Dra. Ma. del Carmen López Reyna</span></p>
-                            <span class="text-sm font-medium text-green-600 bg-green-100 py-1 px-3 rounded-full">Taller</span>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <img class="h-28 w-28 rounded-full object-cover shadow-md" src="src/talleres/taller.jpg" alt="Taller Especializado">
-                        </div>
-                    </div>
-
-                    <!-- Evento: Cierre -->
-                    <div class="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-lg border-l-4 border-gray-400">
-                        <div class="text-center w-24 flex-shrink-0">
-                            <span class="text-2xl font-bold text-gray-800">14:40</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 mb-1">CLAUSURA Y CIERRE DEL EVENTO</h3>
-                            <span class="text-sm font-medium text-gray-500 bg-gray-100 py-1 px-3 rounded-full">Evento General</span>
-                        </div>
-                    </div>
-
+        <!-- Sección Ponencias -->
+        <section style="margin: 40px 0;">
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #3b82f6; text-align: center;">📋 Ponencias</h2>
+            <div id="ponencias-container">
+                <!-- Las ponencias se cargarán aquí dinámicamente -->
+                <div style="text-align: center; padding: 40px; color: #6b7280;">
+                    <p>⏳ Cargando ponencias...</p>
                 </div>
             </div>
         </section>
+
+        <!-- Sección Talleres -->
+        <section style="margin: 40px 0;">
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #10b981; text-align: center;">🛠️ Talleres</h2>
+            <div id="talleres-container">
+                <!-- Los talleres se cargarán aquí dinámicamente -->
+                <div style="text-align: center; padding: 40px; color: #6b7280;">
+                    <p>⏳ Cargando talleres...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Carteles -->
+        <section style="margin: 40px 0;">
+            <h2 style="font-size: 28px; font-weight: 700; color: #1f2937; margin: 40px 0 24px 0; padding-bottom: 12px; border-bottom: 3px solid #8b5cf6; text-align: center;">📊 Carteles</h2>
+            <div id="carteles-container">
+                <!-- Los carteles se cargarán aquí dinámicamente -->
+                <div style="text-align: center; padding: 40px; color: #6b7280;">
+                    <p>⏳ Cargando carteles...</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- Navegación entre páginas -->
+    <section style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 16px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 20px; gap: 16px;">
+            
+            <!-- Botón Día 1 -->
+            <a href="dia1.html" style="display: flex; align-items: center; text-decoration: none; color: white; font-weight: 500; padding: 10px 16px; border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); transition: all 0.3s ease; flex: 1; justify-content: center; border: 2px solid transparent; min-height: 44px;" 
+               onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(102, 126, 234, 0.3)';" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                <svg style="width: 20px; height: 20px; margin-right: 8px; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                <span style="white-space: nowrap;">Día 1</span>
+            </a>
+
+            <!-- Botón Inicio -->
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: #6b7280; font-weight: 500; padding: 10px 16px; border-radius: 8px; border: 2px solid #e5e7eb; background: #f9fafb; transition: all 0.3s ease; flex: 1; justify-content: center; min-height: 44px;" 
+               onmouseover="this.style.borderColor='#10b981'; this.style.color='#10b981'; this.style.background='#ecfdf5';" 
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.color='#6b7280'; this.style.background='#f9fafb';">
+                <span style="white-space: nowrap;">Inicio</span>
+                <svg style="width: 20px; height: 20px; margin-left: 8px; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                </svg>
+            </a>
+
+        </div>
+
+        <!-- Media Query para móviles -->
+        <style>
+            @media (max-width: 480px) {
+                .mobile-nav-section {
+                    padding: 10px !important;
+                }
+                .mobile-nav-container {
+                    padding: 12px !important;
+                    flex-direction: column !important;
+                    gap: 12px !important;
+                }
+                .mobile-nav-button {
+                    flex: none !important;
+                    width: 100% !important;
+                    min-height: 48px !important;
+                    font-size: 16px !important;
+                }
+            }
+        </style>
+
+        <script>
+            // Añadir clases para móviles
+            document.addEventListener('DOMContentLoaded', function() {
+                const section = document.querySelector('section[style*="max-width: 1200px"]');
+                const container = section.querySelector('div[style*="display: flex"]');
+                const buttons = container.querySelectorAll('a');
+                
+                section.classList.add('mobile-nav-section');
+                container.classList.add('mobile-nav-container');
+                buttons.forEach(button => button.classList.add('mobile-nav-button'));
+            });
+        </script>
+    </section>
+
     <footer class="bg-white mt-20 border-t">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500">
             <p>&copy; 2025 COLPOS Campus Montesillo. PSEI-Economía. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
-    <script src="js/ponencias-manager.js"></script>
+    <!-- JavaScript del nuevo sistema -->
+    <script src="js/seminario-manager.js"></script>
     <script>
-        // Configuración específica para la página del día 2
+        // Configuración del menú móvil
         document.addEventListener('DOMContentLoaded', function() {
-            // Configuración del menú móvil para esta página
             const menuBtn = document.getElementById('menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
 

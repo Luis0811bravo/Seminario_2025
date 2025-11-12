@@ -9,7 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- NUEVO SISTEMA CSS RESPONSIVE -->
+    <link rel="stylesheet" href="css/seminario-cards.css">
+    
+    <style>
+        html, body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -32,7 +47,6 @@
                 <div class="flex items-center">
                     <div class="hidden md:flex items-center space-x-8">
                         <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1 active">Inicio</a>
-                        <span class="nav-link text-gray-400 font-medium pb-1 cursor-not-allowed opacity-50">Proyectos</span>
                         <a href="dia1.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 1</a>
                         <a href="dia2.html" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300 pb-1">Día 2</a>
                     </div>
@@ -55,7 +69,6 @@
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100 bg-blue-50 text-blue-600">Inicio</a>
-            <span class="block py-2 px-4 text-sm text-gray-400 cursor-not-allowed opacity-50">Proyectos</span>
             <a href="dia1.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 1</a>
             <a href="dia2.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Día 2</a>
         </div>

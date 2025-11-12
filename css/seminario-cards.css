@@ -1,0 +1,236 @@
+/* ===== RESET Y CONFIGURACIÓN BASE ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== SISTEMA DE TARJETAS SEMINARIO ===== */
+
+/* Contenedor principal de tarjetas */
+.seminario-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+    border-left: 5px solid #3b82f6;
+}
+
+/* Colores de borde por tipo */
+.seminario-card.tipo-ponencia { border-left-color: #3b82f6; }
+.seminario-card.tipo-taller { border-left-color: #10b981; }
+.seminario-card.tipo-cartel { border-left-color: #8b5cf6; }
+
+/* ===== LAYOUT DESKTOP (pantallas grandes) ===== */
+@media (min-width: 768px) {
+    .seminario-card .card-content {
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        gap: 24px;
+    }
+    
+    .seminario-card .horario-section {
+        text-align: center;
+        min-width: 100px;
+        flex-shrink: 0;
+    }
+    
+    .seminario-card .horario-inicio {
+        font-size: 28px;
+        font-weight: 700;
+        color: #3b82f6;
+        line-height: 1;
+        display: block;
+    }
+    
+    .seminario-card .horario-fin {
+        font-size: 16px;
+        color: #6b7280;
+        margin-top: 4px;
+        display: block;
+    }
+    
+    /* OCULTAR horario móvil en desktop */
+    .seminario-card .horario-box {
+        display: none;
+    }
+    
+    .seminario-card .info-section {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .seminario-card .titulo {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1f2937;
+        margin: 0 0 8px 0;
+        line-height: 1.3;
+    }
+    
+    .seminario-card .ponente {
+        font-size: 14px;
+        color: #6b7280;
+        margin: 0 0 12px 0;
+    }
+    
+    .seminario-card .ponente-nombre {
+        font-weight: 600;
+        color: #374151;
+    }
+    
+    .seminario-card .badge {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 6px 16px;
+        border-radius: 20px;
+    }
+    
+    .seminario-card .avatar-section {
+        flex-shrink: 0;
+    }
+    
+    .seminario-card .avatar {
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* ===== LAYOUT MÓVIL (pantallas pequeñas) ===== */
+@media (max-width: 767px) {
+    .seminario-card .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 20px;
+        text-align: center;
+    }
+    
+    .seminario-card .avatar-section {
+        order: 1;
+        margin-bottom: 16px;
+    }
+    
+    .seminario-card .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    .seminario-card .info-section {
+        order: 2;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    .seminario-card .titulo {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1f2937;
+        margin: 0 0 12px 0;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+    
+    .seminario-card .ponente {
+        font-size: 14px;
+        color: #6b7280;
+        margin: 0 0 16px 0;
+    }
+    
+    .seminario-card .ponente-nombre {
+        font-weight: 600;
+        color: #374151;
+    }
+    
+    .seminario-card .horario-section {
+        order: 3;
+        margin-bottom: 16px;
+    }
+    
+    /* OCULTAR horarios desktop en móvil */
+    .seminario-card .horario-inicio,
+    .seminario-card .horario-fin {
+        display: none;
+    }
+    
+    /* MOSTRAR solo horario móvil */
+    .seminario-card .horario-box {
+        background: #eff6ff;
+        color: #2563eb;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+    }
+    
+    .seminario-card .badge-section {
+        order: 4;
+    }
+    
+    .seminario-card .badge {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 20px;
+    }
+}
+
+/* ===== COLORES ESPECÍFICOS POR TIPO ===== */
+
+/* Ponencias - Azul */
+.seminario-card.tipo-ponencia .horario-inicio { color: #3b82f6; }
+.seminario-card.tipo-ponencia .horario-box { background: #eff6ff; color: #2563eb; }
+.seminario-card.tipo-ponencia .badge { background: #dbeafe; color: #1d4ed8; }
+
+/* Talleres - Verde */
+.seminario-card.tipo-taller .horario-inicio { color: #10b981; }
+.seminario-card.tipo-taller .horario-box { background: #f0fdf4; color: #16a34a; }
+.seminario-card.tipo-taller .badge { background: #dcfce7; color: #166534; }
+
+/* Carteles - Morado */
+.seminario-card.tipo-cartel .horario-inicio { color: #8b5cf6; }
+.seminario-card.tipo-cartel .horario-box { background: #faf5ff; color: #9333ea; }
+.seminario-card.tipo-cartel .badge { background: #e9d5ff; color: #7c3aed; }
+
+/* ===== CONTENEDORES DE SECCIONES ===== */
+.seminario-section {
+    margin-bottom: 40px;
+}
+
+.seminario-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #e5e7eb;
+}
+
+/* Ajustes para diferentes tipos de contenido */
+.contenedor-ponencias,
+.contenedor-talleres, 
+.contenedor-carteles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
