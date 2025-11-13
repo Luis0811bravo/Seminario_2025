@@ -36,24 +36,27 @@ class SeminarioManager {
         // Actualizar información del día
         this.actualizarInfoDia(dia, datosDia);
         
-        // Separar por tipos
-        const ponencias = datosDia.ponencias.filter(p => p.tipo === 'ponencia');
-        const talleres = datosDia.ponencias.filter(p => p.tipo === 'taller');
-        const carteles = datosDia.ponencias.filter(p => p.tipo === 'cartel');
+        // Separar por tipos y ordenar cronológicamente
+        const ponencias = datosDia.ponencias.filter(p => p.tipo === 'ponencia')
+            .sort((a, b) => a.horario.localeCompare(b.horario));
+        const talleres = datosDia.ponencias.filter(p => p.tipo === 'taller')
+            .sort((a, b) => a.horario.localeCompare(b.horario));
+        const carteles = datosDia.ponencias.filter(p => p.tipo === 'cartel')
+            .sort((a, b) => a.horario.localeCompare(b.horario));
         
         // Renderizar cada sección
         this.renderizarSeccion('ponencias', ponencias);
         
         // Para día 2, dividir talleres en dos secciones
         if (dia === 'dia2') {
-            // Talleres primera sesión (10:20 - 12:05): taller-2-1 a taller-2-4
+            // Talleres primera sesión (10:20 - 11:50): taller-2-1 a taller-2-3
             const talleresPrimera = talleres.filter(t => 
-                ['taller-2-1', 'taller-2-2', 'taller-2-3', 'taller-2-4'].includes(t.id)
+                ['taller-2-1', 'taller-2-2', 'taller-2-3'].includes(t.id)
             );
             
-            // Talleres segunda sesión (12:25 - 14:40): taller-2-5 a taller-2-9
+            // Talleres segunda sesión (12:25 - 14:25): taller-2-5 a taller-2-8
             const talleresSegunda = talleres.filter(t => 
-                ['taller-2-5', 'taller-2-6', 'taller-2-7', 'taller-2-8', 'taller-2-9'].includes(t.id)
+                ['taller-2-5', 'taller-2-6', 'taller-2-7', 'taller-2-8'].includes(t.id)
             );
             
             this.renderizarSeccion('talleres-primera', talleresPrimera);
